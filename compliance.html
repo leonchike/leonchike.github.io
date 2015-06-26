@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Compliance | Kivvik Wealth</title>
+	<meta name="description" content="Welcome to Kivvik Wealth, Your Personal Client Outreach Assistant. From a new home to a new member of their family, let Kivvik keep you informed.">
+    <meta name='copyright' content='Kivvik Incorporated'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="image/x-icon" href="https://s3.amazonaws.com/Web_Application_Assets/Global+Assets/kivvik_logo.png" rel="SHORTCUT ICON">
+    <meta property="og:image" content="https://s3.amazonaws.com/Web_Application_Assets/Wealth+App/Social/kivvik_Behavioral_Analysis.png" />
+    <link rel="image_src" href="https://s3.amazonaws.com/Web_Application_Assets/Global+Assets/kivvik_logo_full.png"/>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="css/wmmain.css" rel="stylesheet" type="text/css">
+	<link href="css/compliance.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="css/responsive.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.9.0/angularfire.min.js"></script>
+    <script type="text/javascript" src='js/indexController.js'></script>
+
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"> </script>
+    <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+    <script type="text/javascript" src="js/tabs.js"></script>
+    <script src='js/scripts.js' type='text/javascript'></script>
+    <script type="text/javascript" src="js/fixingNavbar.js"></script>
+    <script src='js/app.js' type='text/javascript'></script>
+    <script src='js/customAnchorScroll.js' type='text/javascript'></script>
+    <script src='js/kivvikscroller.js' type='text/javascript'></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48658047-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+    
+    
+<body onload="javascript:window.onload();" id="compliancePage">
+    <header class="header">
+		<div class="homelogo">
+			<a href="/index.html"><img id="homelogo" src="https://s3.amazonaws.com/Web_Application_Assets/Global+Assets/kivvik_logo_full.png"></a>
+		</div>
+		<div class="headerlinkscont">
+			<a href="http://wealthapp.kivvik.com/#!/auth/login"><p class="headerlinks" id="nav_link_p_r_login">Log In</p></a>
+            <a href="../about.html"><p class="headerlinks" id="nav_link_p_r">About Us</p></a>
+            <a href="../advisor.html#pricing"><p class="headerlinks" id="nav_link_p_r">Our Pricing</p></a>
+            <a href="../compliance.html"><p class="headerlinks" id="nav_link_p_r">Compliance</p></a>
+            <a href="../client.html"><p class="headerlinks" id="nav_link_p_r">The Kivvik Tour</p></a>
+		</div>
+	</header>	
+    
+    <section id="mobileNav">
+        <a href="../client.html"><p class="mobileNavItem">Tour</p></a>
+        <a href="../compliance.html"><p class="mobileNavItem">Compliance</p></a>
+        <a href="../advisor.html#pricing"><p class="mobileNavItem">Pricing</p></a>
+        <a href="../about.html"><p class="mobileNavItem">About</p></a>
+    </section>
+
+	<section id="complianceHero">
+        <div id="phoneWrapper">
+            <img class="phoneBase" src="img/compliance/iphone5sBlack.png">
+            <img id="mcAfeeImg" src="img/compliance/McAfee.png">
+            <img id="BIT265Img" src="img/compliance/265BIT.png">
+            <img id="ArchivingImg" src="img/compliance/Archiving.png">
+            <img id="phoneSurveyCompliance" src="img/compliance/PhoneSurveyImage.png">
+
+            <img class="mcAfeeLine" src="img/compliance/McAfeeLine.svg">
+            <img class="Line265" src="img/compliance/256Line.svg">
+            <img class="awsLine" src="img/compliance/awsLine.svg">
+            <img class="complianceLine" src="img/compliance/Compliantline.svg">
+
+            <div class="tooltips firstTooltip">
+                <div class="tooltipsContainer">
+                    <img class="mcAfeeLogo" src="img/compliance/McAfeeLogo.png">
+                    <ul>
+                        <li class="cd-single-point firstSinglePoint">
+                            <a class="cd-img-replace" href="#0">More</a>
+                            <div class="cd-more-info cd-right">
+                                <p>
+                                    Our account security is supported by McAfee, the world’s leader in security services.
+                                    <!-- <br><span>LEARN MORE</span> -->
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tooltips secondTooltip">
+                <div class="tooltipsContainer">
+                    <img class="Logo265" src="img/compliance/256Logo.png">
+                    <ul>
+                        <li class="cd-single-point secondSinglePoint">
+                            <a class="cd-img-replace" href="#0">More</a>
+                            <div class="cd-more-info cd-right">
+                                <p>
+                                    We use 256-bit AES SSL encryption - the same security major banks use to encrypt communication.
+                                    <!-- <br><span>LEARN MORE</span> -->
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tooltips thirdTooltip">
+                <div class="tooltipsContainer">
+                    <img class="awsLogo" src="img/compliance/AWSLogo.png">
+                    <ul>
+                        <li class="cd-single-point thirdSinglePoint">
+                            <a class="cd-img-replace" href="#0">More</a>
+                            <div class="cd-more-info cd-left">
+                                <p>
+                                    All of your data is stored securely on Amazon’s onsite servers. The leader in the cloud hosting industry.
+                                    <!-- <br><span>LEARN MORE</span> -->
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tooltips fourthTooltip">
+                <div class="tooltipsContainer">
+                    <img class="complianceLogo" src="img/compliance/complainttext.png">
+                    <ul>
+                        <li class="cd-single-point fourthSinglePoint">
+                            <a class="cd-img-replace" href="#0">More</a>
+                            <div class="cd-more-info cd-left">
+                                <p>
+                                    We never delete any data ensure you can download and archive full account data at any point in time.
+                                    <!-- <br><span>LEARN MORE</span> -->
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div id="phoneWrapperMobile">
+            <img src="img/compliance/PhoneSurveyMobile.png" id="complianceHeroImgMobile" />
+        </div>
+
+        <div class="complianceLargeHeader">
+            <h2>WE TREAT YOUR CLIENTS DATA JUST LIKE YOU DO.</h2>
+        </div>
+	</section>
+    
+    <div class="navbar_anchor"></div>
+    <section class="navbar" id="navbar">
+        <div class="bizMenuCont">
+            <div class="bizMenuLeft">
+                <p id="bizMenuLeftItem"><a class="scroll" href="#datacompliance">Data Compliance</a></p>
+                <p id="bizMenuLeftItem"><a class="scroll" href="#clientcomm">Client Communication</a></p>
+            </div>
+            <div class="bizMenuSignUp">
+                <a id="signUpH" href="../index.html"><p id="bizMenuSignup">14-Day Free Trial</p></a>
+            </div>
+        </div>
+    </section>
+    
+   <section id="complianceBody">
+        <div class="complicanceContent">
+            <h2 class="complianceH2">Kivvik Overview</h2>
+            <p class="complianceP">
+Kivvik hosts its application with leading infrastructure and hosting services, including Amazon EC2 and S3 (NASDAQ: AMZN). We apply security controls at every layer from physical to application and isolate customer applications and data. We also apply best practices and other security techniques to ensure the safety and security of our customer data.
+            </p>
+        </div>
+       
+       <div class="complicanceContent" id="datacompliance">
+            <h2 class="complianceH2">Security Assessments and Compliance</h2>
+           <h3 class="complianceH3">App Development</h3>
+            <p class="complianceP">
+Kivvik follows best practices of application development and prevents common web software attacks. We use modern technologies and update of our application framework for newly discovered security vulnerabilities. Our development process includes continuous vulnerability scanning to ensure we are maintaining a high level of security in our codebase.
+            </p>
+           
+           <h3 class="complianceH3">Data Centers</h3>
+            <p class="complianceP">
+Kivvik’s physical infrastructure is hosted and managed within Amazon’s secure data centers and utilize the Amazon Web Service (AWS) technology. Amazon continually manages risk and undergoes recurring assessments to ensure compliance with industry standards. Amazon’s data center operations have been accredited under; ISO 27001, SOC 1 and SOC 2/SSAE 16/ISAE 3402, PCI Level 1, FISMA Moderate, Sarbanes-Oxley.
+            </p>
+           
+           <h3 class="complianceH3">Bank-level Encryption</h3>
+            <p class="complianceP">
+Our application traffic runs entirely over 256-bit encrypted SSL (https). Passwords are hashed before storing using bcrypt with a cost factor of 10 and application credentials are kept separate from the database and our code base. Additionally, sensitive data is stored in an encrypted format while at rest.
+            </p>
+           
+           <h3 class="complianceH3">Data Reliability & Backup</h3>
+            <p class="complianceP">
+All user data on Kivvik is backed up nightly and stored in multiple physical locations to prevent data loss. We have the ability to do point-in-time recovery of our entire database in the event of a system-wide emergency.
+            </p>
+           
+           <h3 class="complianceH3">PCI – Payment Data</h3>
+            <p class="complianceP">
+Kivvik uses PCI compliant payment processor Stripe for encrypting and processing credit card payments. Braintree Payments has been audited by a PCI-certified auditor, and is certified to PCI Service Provider Level 1. This is the most stringent level of certification available. Credit card numbers are not stored on the Kivvik platform.
+            </p>
+           
+           <h3 class="complianceH3">Physical Security</h3>
+            <p class="complianceP">
+Kivvik utilizes ISO 27001 and FISMA certified data centers managed by Amazon. Amazon has many years of experience in designing, constructing, and operating large-scale data centers. This experience has been applied to the AWS platform and infrastructure. AWS data centers are housed in nondescript facilities, and critical facilities have extensive setback and military grade perimeter control berms as well as other natural boundary protection. Physical access is strictly controlled both at the perimeter and at building ingress points by professional security staff utilizing video surveillance, state of the art intrusion detection systems, and other electronic means. Authorized staff must pass two-factor authentication no fewer than three times to access data center floors. All visitors and contractors are required to present identification and are signed in and continually escorted by authorized staff.</p>
+           <p class="complianceP">
+Amazon only provides data center access and information to employees who have a legitimate business need for such privileges. When an employee no longer has a business need for these privileges, his or her access is immediately revoked, even if they continue to be an employee of Amazon or Amazon Web Services. All physical and electronic access to data centers by Amazon employees is logged and audited routinely.
+            </p>
+           
+           <h3 class="complianceH3">Power </h3>
+            <p class="complianceP">
+The data center electrical power systems at Amazon are designed to be fully redundant and maintainable without impact to operations, 24 hours a day, and seven days a week. Uninterruptible Power Supply (UPS) units provide backup power in the event of an electrical failure for critical and essential loads in the facility. Data centers use generators to provide backup power for the entire facility.</p>
+           
+           <h3 class="complianceH3">Fire Detection and Suppression</h3>
+            <p class="complianceP">
+Automatic fire detection and suppression equipment has been installed to reduce risk at Amazon facilities. The fire detection system utilizes smoke detection sensors in all data center environments, mechanical and electrical infrastructure spaces, chiller rooms and generator equipment rooms. These areas are protected by either wet-pipe, double-interlocked pre-action, or gaseous sprinkler systems.</p>
+           
+           <h3 class="complianceH3">Climate and Temperature Control</h3>
+            <p class="complianceP">
+Climate control is required to maintain a constant operating temperature for servers and other hardware, which prevents overheating and reduces the possibility of service outages. Data centers are conditioned to maintain atmospheric conditions at optimal levels. Monitoring systems and data center personnel ensure temperature and humidity are at the appropriate levels.</p>
+           
+           <h3 class="complianceH3">Management </h3>
+            <p class="complianceP">
+Data center staff at Amazon monitor electrical, mechanical and life support systems and equipment so issues are immediately identified. Preventative maintenance is performed to maintain the continued operability of equipment.
+
+</p>
+         
+        </div>
+       
+        <div class="complicanceContent">
+            <h2 class="complianceH2" id="clientcomm">Client Communication</h2>
+            <p class="complianceP">
+                All client communication between Kivvik and the client can all be exported in a JSON archival file format. This file format allows us to export all information a client and advisor data.</p>
+            <p class="complianceP">
+                Adivsor data includes; Advisor name, email, phone number, profile infomration, profile image, company logo used, and Kivvik profile creation metadata.</p>
+       <p class="complianceP">
+       Client data includes; client name, phone (if available), email address, profile image (if available), usage statisitics, event data, and communication email send trails.
+            </p>
+            
+            <h3 class="complianceH3">Questionnaire Breakdown</h3>
+            <p class="complianceP">
+This section details the information we allow clients to submit to their respect advisors. The content is structured based on the topics available on the Kivvik platform followed by a structured view of the possible response we have allowed.
+</p>
+            
+            <h4 class="complianceH4">Topics Overview</h4>
+            <p class="complianceP">
+This is a list of the 13 topic areas we address. 1. Expecting a Child, 2. College Saving, 3. Vehicle transactions, 4. Travel Plans, 5. Marital Status, 6. Separation and Divorce, 7. Real Estate, 8. Renovations, 9. Retirement, 10. Employment, 11. Health Issues, 12. Inheritance, 13. Miscellaneous Topics.
+</p>
+            
+            <h4 class="complianceH4">1. Expecting A Child</h4>
+            <p class="complianceP">
+                <span class="complianceQ">Question 1:</span></br> We inquire into the expected time frame for the new child. Child is defined as a direct offspring, adoption or any other like types. Client has the option to select a specific month within the next year starting from the current month, select “within a year” if unsure of the exact month, or “in the future” for a date that exceeds a year.
+</p>
+    
+     <p class="complianceP">
+                <span class="complianceQ">Question 2:</span></br> We inquire into the status of planning for college savings. This question is a simple yes or no selection as to give a high level set of responses to the advisor.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 3:</span></br> We inquire into the status of the insurance planning after the consideration for a new dependent. We ask about the status of Long-term, Life, Health, Disability, Critical Illness Insurance.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 4:</span></br> We inquire into the status of the insurance planning after the consideration for a new dependent. We ask about the status of Long-term, Life, Health, Disability, Critical Illness Insurance.
+</p>
+
+ <p class="complianceP">
+     <span class="complianceQ">Question 5:</span></br>We inquire into whether the new dependent is the first child, as this give the advisor more context and avenues to assist the client.
+</p>
+
+<h4 class="complianceH4">2. College Savings</h4>
+            <p class="complianceP">
+                <span class="complianceQ">Scope:</span></br>We inquire into high-level college savings plans that have not been discussed with the advisor. This includes personal savings, saving for a dependent or savings for another individual. The initial question looks into the proposed time frame for when the individual would like to begin saving. 
+</p>
+    
+     <p class="complianceP">
+                <span class="complianceQ">Question 1:</span></br>Initially the Client has the option to select a specific month within the next year starting from the current month, select “within a year” if unsure of the exact month, or “in the future” for a date that exceeds a year.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 2:</span></br>Initially the Client has the option to select a specific month within the next year starting from the current month, select “within a year” if unsure of the exact month, or “in the future” for a date that exceeds a year.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 3:</span></br>Initially the Client has the option to select a specific month within the next year starting from the current month, select “within a year” if unsure of the exact month, or “in the future” for a date that exceeds a year.
+</p>   
+
+<h4 class="complianceH4">3. Vehicle</h4>
+            <p class="complianceP">
+                <span class="complianceQ">Scope:</span></br>The vehicle inquire allows clients to disclose whether they’ve recently had a vehicle transaction or are planning on a near future vehicle transaction.
+</p>
+    
+     <p class="complianceP">
+                <span class="complianceQ">Question 1:</span></br>The initial inquiry into a vehicle transaction allows the client to select the kind of vehicle he/she will be making a transaction on. The preset options are Car, RV, Boat, Motorcycle, Bus and Van.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 2:</span></br>The second question in the vehicle topic allows the client to specify the kind of transaction they are planning on conducting. The client has the option to select purchasing, selling or leasing.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 3:</span></br>The third question in the vehicle topic allows the client to identify when they will be making the vehicle transaction. The preset options provide are: a month selector for within the year, within a year if a month is unknown, and in the future for when the transaction is beyond the scope of a year.
+</p>   
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 4:</span></br>The fourth question in the vehicle topic allows the client to identify the price range they are willing to either pay or receive for the vehicle. The options for a purchase include; $0-20K, $21-40K, $41-60K, $61-80K and $80K+. The options for a lease include: $0-300, $301-600, $601-900, and $900+.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 5:</span></br>The fifth and final question in the vehicle topic allows the client to disclose the reason for purchasing or leasing the vehicle. The preset options include; personal use, business or retirement.
+</p>  
+
+<h4 class="complianceH4">4. Travel</h4>
+            <p class="complianceP">
+                <span class="complianceQ">Scope:</span></br>The travel topic allows clients to share any upcoming trips that may be of use to the advisor to know, in order to help them plan accordingly.
+</p>
+    
+     <p class="complianceP">
+                <span class="complianceQ">Question 1:</span></br>The initial inquiry into the travel topic allows the client to disclose where they are planning a trip to. This gives the advisor context as to whether it will be costly to the client. The input is a basic text box that is limited to 30 characters.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 2:</span></br>The second phase of the travel topic allows the client to identify the date they plan on beginning the trip. The options include a month selector, within a year or in the future.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 3:</span></br>The third question in the travel topic allows the client to disclose the proposed length of the trip. The preset options are: less than a week, less than a month, less than 3 months, and lastly more than 3 months.
+</p>   
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 4:</span></br>The final phase of the travel inquiry allows the client to give the advisor an estimate on how much the planned trip will cost. The options include: less than $1000, less than $5000, less than $10,000 and lastly more than $10,000.
+</p>
+
+<h4 class="complianceH4">5. Marriage</h4>
+            <p class="complianceP">
+                <span class="complianceQ">Scope:</span></br>The marriage topic allows clients to easily disclose any current and upcoming changes in their marital status. The key options we focus on include, planning an engagement, engaged, and currently married.
+</p>
+    
+     <p class="complianceP">
+                <span class="complianceQ">Question 1:</span></br>Allows the client to specific which of the 3 sub-topics is currently occurring in their lives. The options are planning an engagement, engaged, and currently married.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 2A:</span></br>If planning an engagement, the client is asked whether they are planning on purchasing an engagement ring.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 3A:</span></br>Based on question 2a’s response if positive, the client is then asked to identify a timeframe for the ring purchase. The preset options provided include; a month selector, less than 6 months from now, with a year, or in the future.
+</p>   
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 4A:</span></br>Based on 2a’s input if positive the client is asked whether or not they are planning on insuring the ring.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 2B:</span></br>If engaged is selected the client is asked when they are planning on a marriage. The options include a month selector, less than 6 months from now, within a year and finally in the future.
+
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 3B:</span></br>Once set 2b is completed the client is asked to select their projected budget for the wedding. The options include under $25K, under $50K, under $100K, under $500K, over $500K and lastly unknown.
+</p>   
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 4B:</span></br>Once the initial engagement questions are complete the client is asked insurance questions. That gauge whether they have taken insurance changes due to an upcoming marriage into consideration. The questions policies include: life, long-term, health, disability, critical illness or no I haven’t considered a change.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 5B:</span></br>the last inquire in the engagement section allows the client to select insurance policies they would like to discuss with the advisor based on their previous inputs from Question 4b.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 2C:</span></br>If currently married the client is asked when they got married. The options presented allows for an exact date selection.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 3C:</span></br>The following question dives into insurance considerations. The questions gauge whether they have make insurance changes due to the marriage. The questions policies include: life, long-term, health, disability, critical illness or no I haven’t considered a change.
+
+</p>   
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 4C:</span></br>the last inquire in the engagement section allows the client to select insurance policies they would like to discuss with the advisor based on their previous inputs from Question 3b.
+</p>
+
+<h4 class="complianceH4">6. Separation / Divorce</h4>
+            <p class="complianceP">
+                <span class="complianceQ">Scope:</span></br>The separation / divorce topic allows clients to easily disclose any changes in their marital status. 
+</p>
+    
+     <p class="complianceP">
+                <span class="complianceQ">Question 1:</span></br>The initial inquiry allows clients to select the current status of their situation. The options provided include separated and divorced.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 2A:</span></br>If separated is selected the clients is then asked when the separation occurred / is occurring. The options include, in the last year, in the last 3 months, this month and lastly in the future.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 3A:</span></br>Once question 2 is answered the client is asked a final question regarding the anticipation of a divorce. The options are a simple yes or no selection.
+</p>   
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 2B:</span></br>If divorced is selected the client is asked a final question regarding the time the divorce took place. The options include in the last year, in the last 3 months and the current month.
+</p>
+
+<h4 class="complianceH4">7. Real Estate</h4>
+            <p class="complianceP">
+                <span class="complianceQ">Scope:</span></br>The scope of the real estate topic is to allows the client to disclose future plans to purchase, sell or lease property.</p>
+    
+     <p class="complianceP">
+                <span class="complianceQ">Question 1:</span></br>The initial question in the Real-Estate topic allows the client to identify the type of property they are considering. The options include, a home, an apartment, land, investing, a vacation home or commercial property.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 2:</span></br>The following question allows the client to identify the type of transaction that is occurring. The options include a purchase, a sale, or a lease of a property.
+
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 3:</span></br>The third question in the real-estate inquiry allows the client to identify a time frame for the transaction. The options include: a month selector, within a year, in the future, or already occurred.
+</p>   
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 4:</span></br>The fourth question in the real-estate inquiry allows the client to select an expect cost of the property. The options vary based on the transaction type. The options for purchasing or selling include less than $250K, less than $500K, less than $750K, less than $1M, or more than $1M. The options for leasing include: less than $5L, less than $15K, less than $30K, less than $100L, over $100K.
+</p>
+
+<p class="complianceP">
+                <span class="complianceQ">Question 5:</span></br>The final question in the real estate inquiry allows the client to disclose the whether the transaction leads to a change in permanent residence. The option is a simple Yes/No selection.
+</p>
+
+<h4 class="complianceH4">8. Renovations</h4>
+            <p class="complianceP">
+                <span class="complianceQ">Scope:</span></br>The renovations topic allows the client to disclose any plans to make renovations to any type of property.</p>
+    
+     <p class="complianceP">
+                <span class="complianceQ">Question 1:</span></br>The initial question allows the client to specify when they are planning on making the renovations. The input is a simple date input with months in for the next 12 months; in the future; or already occurred.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 2:</span></br>The second question allows the client to disclose the estimated cost of the renovations. The options are under $10K, under $25K, under $50K, under $100K or over $100K.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 3:</span></br> The third question allows the client to disclose the time frame for the project. The options include less than 1 month, less than 3 months, less than 6 months, and lastly over 6 months.
+</p>   
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 4:</span></br>The forth questions allows the client to describe the space they will be renovating. The input is a simple text input limited to 30 characters.
+</p>
+
+<p class="complianceP">
+                <span class="complianceQ">Question 5:</span></br>The last question inquires the purpose of the renovations. The client is given 2 options; personal or investment.
+</p>
+
+<h4 class="complianceH4">9. Retirement</h4>
+            <p class="complianceP">
+                <span class="complianceQ">Scope:</span></br>The retirement topic allows the client to notify their advisor of a change to their retirement plans.</p>
+    
+     <p class="complianceP">
+                <span class="complianceQ">Question 1:</span></br>The initial and only question allows the client to answer the simple question of whether they would like to review their retirement plan with the advisor. The options are a simple yes or no input.
+</p>
+
+<h4 class="complianceH4">10. Employment</h4>
+            <p class="complianceP">
+                <span class="complianceQ">Scope:</span></br>The employment topics digs into changes in the client's employment status. The sub-topic options include: unemployment, new job, self-employment, and career prospecting.
+</p>
+    
+     <p class="complianceP">
+                <span class="complianceQ">Question 1:</span></br>The initial inquiry allows the client to identify the type of employment that is currently occurring. The options are unemployment, new job, self-employment, and career prospecting.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 2A:</span></br>If the client selects New Job, they are then asked to specify the timeframe the new job occurred/is occurring. The input options are within a year, in the future, less than 3 months ago, and within the last year.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 3A:</span></br>The following question allows the client the opportunity to state whether they have altered their insurance policies to reflect the change in their job. The options they can review include; long-term, life, health, disability, critical illness, or no I haven’t reviewed my policies.
+</p>   
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 4A:</span></br>The following question to the insurance probe asks the client if they would like to review their insurance policies with their advisor.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 2B:</span></br>If the client selects Self-Employed they are asked when they became self-employed / when they will become self-employed. The options include a month selector, within a year, in the future, less than 3 months ago, and within the last year.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 3B:</span></br>The following question allows the client the opportunity to state whether they have altered their insurance policies to reflect the change in their job. The options they can review include; long-term, life, health, disability, critical illness, or no I haven’t reviewed my polices.
+</p>  
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 4B:</span></br>The following question to the insurance probe asks the client if they would like to review their insurance policies with their advisor.
+
+</p>   
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 2C:</span></br>If the client selects Career Prospecting, they are asked a simple date question on when they are expecting to make the transition. The options presented are a month selector, within a year, and in the future.
+
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 2D:</span></br>If the client selects unemployment, they are first asked the date the unemployment occurred / is expected to occur. The options are a simple month selection, within a year, in the future, less than 3 months ago and within the last year.
+
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 3D:</span></br>The following question allows the client the opportunity to state whether they have altered their insurance policies to reflect the change in their job. The options they can review include; long-term, life, health, disability, critical illness, or no I haven’t reviewed my policies.
+</p> 
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 4D:</span></br>The following question to the insurance probe asks the client if they would like to review their insurance policies with their advisor.
+</p>
+
+<h4 class="complianceH4">11. Health Issues</h4>
+            <p class="complianceP">
+                <span class="complianceQ">Scope:</span></br>The health issues topic allows the client to easily report any current and expected health issues that is occurring in their lives.
+</p>
+    
+     <p class="complianceP">
+                <span class="complianceQ">Question 1:</span></br>The initial inquiry in the health issues topic allows the client to identify the individual experiencing the health issue. The preset options include personal, spouse, child, dependent or other individual.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 2:</span></br>The following questions asks when the health issues are to be expected. The options include a month selector, and expected in the future.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 3:</span></br>This is an optional question that allows the client to disclose any information they will like to the advisor. The input option is a text input that is limited to 200 characters.
+</p>   
+
+<h4 class="complianceH4">12. Inheritance</h4>
+            <p class="complianceP">
+                <span class="complianceQ">Scope:</span></br>The inheritance topic allows the client to disclose any inheritances they have received or are planning on receiving.
+</p>
+    
+     <p class="complianceP">
+                <span class="complianceQ">Question 1:</span></br>The initial question probes into when the client is expecting an inheritance. The input options include a month input, within a year, in the future, less than 3 months ago or within the last year.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 2:</span></br>The following questions looks to see if the client has considered the tax implications of the inheritance. There is a simple yes or no input.
+</p>
+
+ <p class="complianceP">
+                <span class="complianceQ">Question 3:</span></br>The last question in the heritance topic allows the client to leave any additional notes on the inheritance to their advisor. The client is given a text input with a limit of 200 characters.
+</p> 
+
+<h4 class="complianceH4">13. Miscellaneous</h4>
+            <p class="complianceP">
+                <span class="complianceQ">Scope:</span></br>The miscellaneous topic allows the client to input any kind of event feedback to the advisor. The client is presented with a subject line and simple input.
+</p>
+    
+
+        </div>
+    </section>
+
+
+<footer>
+        <section class="footerCont">
+            <div class="destinationLinks">
+                <div class="destinationLinksLeft">
+                    <p><a href="mailto:hello@kivvik.com?subject=Sales Inquiry">Contact Sales</a></p>
+                    <p><a href="mailto:hello@kivvik.com?subject=I have a question">Help and Support</a></p>
+                    <p><a href="faq.html">Frequently Asked Questions</a></p>
+                    <!--<p><a href="/blog/blog.html">Kivvik Blog</a></p>-->
+                </div>
+                <div class="destinationLinksRight">
+                    <p><a target="_blank" href="https://twitter.com/kivvikinc">Twitter</a></p>
+                    <p><a target="_blank" href="https://www.facebook.com/kivvikInc">Facebook</a></p>
+                    <p><a target="_blank" href="https://www.linkedin.com/company/3612545?trk=tyahtrkInfo=tarId%3A1404943801376%2Ctas%3Akivvik%2Cidx%3A1-1-1">LinkedIn</a></p>
+                </div>
+            </div>
+
+            <div class="legalLinks">
+                <p>&copy; 2015 Kivvik Incorporated. All Rights Reserved</p>
+                <p><a href="../legal/privacypolicy.html">Privacy Policy</a></p>
+                <p><a href="../legal/kivviksitetermsofuse.html">legal</a></p>
+            </br><p>387 Technology Dr. College Park MD 20740 | 240.366.7982 | hello@kivvik.com</p>
+            </div>
+
+        </section>
+        <section class="footerContMobile">
+            <div id="mobileFooterContainer">
+                <div id="mobileFooterHeader">
+                    <p id="mobileFooterHeaderH2">&copy; 2015 Kivvik, Inc.</p>
+                </div>
+                <div id="mobilFooterColCont">
+                    <div id="MobileFooterCol">
+                        <div class="footerContMobileItemCont">
+                            <a href="mailto:hello@kivvik.com?subject=I have a question"><p class="ftmoitem">Support</p>
+                        </div>
+                        <div class="footerContMobileItemCont">
+                            <a href="../about.html"><p class="ftmoitem">About</p></a>
+                        </div>
+                        <div class="footerContMobileItemCont">
+                            <a target="_blank" href="https://twitter.com/kivvikinc"><p class="ftmoitem">Twitter</p></a>
+                        </div>
+                        <div class="footerContMobileItemCont">
+                            <a href="../legal/kivviksitetermsofuse.html"><p class="ftmoitem">Legal</p></a>
+                        </div>
+                        <div class="footerContMobileItemCont" id="noborderbottomfooter">
+                            <a href="../legal/privacypolicy.html"><p class="ftmoitem">Privacy</p></a>
+                        </div>
+                    </div>
+                    <div id="MobileFooterCol">
+                        <div class="footerContMobileItemCont">
+                            <a href="mailto:hello@kivvik.com?subject=Sales Inquiry"><p class="ftmoitem">Sales</p></a>
+                        </div>
+                        <div class="footerContMobileItemCont">
+                            <a href="../compliance.html"><p class="ftmoitem">Compliance</p></a>
+                        </div>
+                        <div class="footerContMobileItemCont">
+                            <a target="_blank" href="https://www.linkedin.com/company/3612545?trk=tyahtrkInfo=tarId%3A1404943801376%2Ctas%3Akivvik%2Cidx%3A1-1-1"><p class="ftmoitem">LinkedIn</p></a>
+                        </div>
+                        <div class="footerContMobileItemCont" id="noborderbottomfooter">
+                            <a href="../legal/termsofuse.html"><p class="ftmoitem">Terms of Use</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+<script type="text/javascript">
+            $('#secondaryHeader').scrollToFixed();
+</script>
+<script src='js/customAnchorScroll.js' type="text/javascript"></script>
+<script src='js/scrollReveal.js'></script>
+    <script>
+
+      window.sr = new scrollReveal();
+
+    </script>
+    <script src='js/pointsOfInterest.js' type='text/javascript'></script>
+<!-- Live Chat Integration-->    
+<script type="text/javascript">
+    if (matchMedia('only screen and (min-width: 641px)').matches) {
+var __lc = {};
+__lc.license = 6258201;
+
+(function() {
+	var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+	lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+    }
+</script>
+<!-- End Live Chat Integration -->
+
+<!-- Start of Async HubSpot Analytics Code -->
+  <script type="text/javascript">
+    (function(d,s,i,r) {
+      if (d.getElementById(i)){return;}
+      var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+      n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/542755.js';
+      e.parentNode.insertBefore(n, e);
+    })(document,"script","hs-analytics",300000);
+  </script>
+<!-- End of Async HubSpot Analytics Code -->    
+</body>
+</html>

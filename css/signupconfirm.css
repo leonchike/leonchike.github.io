@@ -1,0 +1,125 @@
+/*Sign Up Confirm page*/
+#kivvikSignUpConfirm{
+    background: #fff;
+}
+
+#kivvikSignUpConfirm .headerlinks{
+    color: #252525;
+}
+
+#signUpCont{
+    max-width: 600px;
+    height: auto;
+    min-height: 100vh;
+    margin: auto;
+    position: relative;
+    display: block;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+#signUpImg{
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 160px;
+}
+
+#signupH1{
+    position: relative;
+    text-align: center;
+    font-weight: 500;
+    line-height: 44px;
+    font-size: 15px;
+    color: #92969c;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+#signUph2{
+    color: #252525;
+    font-weight: 300;
+    font-size: 26px;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
+#signUpP{
+    font-size: 15px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
+}
+
+#signUph2Share{
+    color: #6dd9aa;
+    font-weight: 300;
+    font-size: 17px;
+    text-align: center;
+    margin: 0;
+    font-weight: 700;
+    padding-top: 40px;
+    text-transform: uppercase;
+}
+
+#signUpShareCont{
+    position: relative;
+    display: block;
+    margin: auto;
+    max-width: 340px;
+    min-width: 120px;
+    height: 60px;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+#signUpShareCont:after {
+    display:inline-block;
+    width:100%;
+    content:'';
+}
+
+.signUpSocialBtn{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: #6dd9aa;
+    position: relative;
+    display: inline-block;
+}
+
+.signUpSocialIcon{
+    height: 24px;
+    padding-left: 18px;
+    padding-top: 18px;
+    display: inline-block;
+}
+
+#scTwitter{
+    background: #63cdf1;
+}
+
+#scFacebook{
+    background: #507cbe;
+}
+
+#scEmail{
+    background: #b3abbb;
+}
+
+#scLinkedin{
+    background: #90cadd;
+}
+
+.twitterAction{
+    display: none;
+    text-align: center;
+}
+
+#scTwitter:hover .twitterAction{
+    display: block;
+}
+
+

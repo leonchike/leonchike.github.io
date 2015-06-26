@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <style>
+
+      .cls-2 {
+        fill: #72c8fa;
+      }
+    </style>
+  </defs>
+  <circle id="circle-1" class="cls-2" cx="11" cy="11" r="11"/>
+</svg>

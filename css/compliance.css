@@ -1,0 +1,476 @@
+#phoneWrapper {
+	margin: auto;
+	display: block;
+	max-width: 416px;
+	position: relative;
+	padding-top: 342px;
+}
+
+#phoneWrapper img {	
+	position: absolute;
+}
+
+#phoneWrapper img:nth-of-type(2), #phoneWrapper img:nth-of-type(3), #phoneWrapper img:nth-of-type(4), #phoneWrapper img:nth-of-type(5)  {
+	max-width: 100%;
+	-webkit-transform: scale(0.8) translateY(-6px);
+	-moz-transform: scale(0.8) translateY(-6px);
+	-o-transform: scale(0.8) translateY(-6px);
+	transform: scale(0.8) translateY(-6px);
+}
+
+.phoneBase {
+	max-width: 100%;
+	-webkit-transform: scale(1.2) translateY(0px);
+	transform: scale(1.2) translateY(0px);
+}
+
+.translateMcAfee {
+	-webkit-transition: .8s ease-in-out;
+	 transition: .8s ease-in-out;
+
+	-webkit-transform: translate(0px, -25px) !important;
+	transform: translate(0px, -25px) !important;
+}
+
+.translate265BIT {
+	-webkit-transition: .8s ease-in-out;
+	 -moz-transition: .8s ease-in-out;
+	 -o-transition: .8s ease-in-out;
+	 transition: .8s ease-in-out;
+
+	 -webkit-transform: translate(0px, -50px) !important;
+	 transform: translate(0px, -50px) !important;
+}
+
+.translateArchiving {
+	-webkit-transition: .8s ease-in-out;
+	 transition: .8s ease-in-out;
+
+	 -webkit-transform: translate(0px, -75px)  !important;
+	 transform: translate(0px, -75px)  !important;
+}
+
+.translateSurveyScreen {
+	-webkit-transition: .8s ease-in-out;
+	 transition: .8s ease-in-out;
+
+	 -webkit-transform: translate(0px, -100px) !important;
+	 transform: translate(0px, -100px) !important;
+}
+
+.mcAfeeLine {
+	opacity: 0;
+	-webkit-transform: translate(172px, 106px) scale(0.5);
+	transform: translate(172px, 106px) scale(0.5);
+}
+
+.Line265 {
+	opacity: 0;
+	-webkit-transform: scale(0.5)translate(648px, 6px);
+	transform: scale(0.5)translate(648px, 6px);
+}
+
+.awsLine {
+	opacity: 0;
+	-webkit-transform: scale(0.5) translate(121px, -190px);
+	transform: scale(0.5) translate(121px, -190px);
+}
+
+.complianceLine {
+	opacity: 0;
+	-webkit-transform: scale(0.5) translate(-110px, 26px);
+	transform: scale(0.5) translate(-110px, 26px);
+}
+
+.awsLogo {
+	opacity: 0;
+	top: 0;
+	left: 0;
+	position: absolute;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.Logo265 {
+	opacity: 0;
+	top: 0;
+	left: 0;
+	position: absolute;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.mcAfeeLogo {
+	opacity: 0;
+	top: 0;
+	left: 0;
+	position: absolute;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.mcAfeeLogo:hover, .Logo265:hover, .complianceLogo:hover, .awsLogo:hover {
+	cursor: pointer;
+}
+
+.complianceLogo {
+	opacity: 0;
+	top: 0;
+	left: 0;
+	position: absolute;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.lineTransitions {
+	opacity: 1 !important;
+	-webkit-transition: opacity 2.7s;
+   -moz-transition: opacity 2.7s;
+   -o-transition: opacity 2.7s;
+   transition: opacity 2.7s; 
+}
+
+.tooltips {
+	position: absolute;
+	width: 150px;
+	height: 70px;
+}
+
+.tooltips.firstTooltip {
+	-webkit-transform: translate(310px, 144px);
+	transform: translate(310px, 144px);
+}
+
+.tooltips.secondTooltip {
+	-webkit-transform:  translate(420px,-2px);
+	  transform: translate(420px,-2px);
+}
+
+.tooltips.thirdTooltip{
+	-webkit-transform: translate(-50px, -154px);
+	transform: translate(-50px, -154px);
+}
+
+.tooltips.fourthTooltip{
+	-webkit-transform:  translate(-211px, -32px);
+	transform:  translate(-211px, -32px);
+}
+
+.firstSinglePoint {
+	left: 100px;
+	top: 20px;
+}
+
+.secondSinglePoint {
+	left: 86px;
+	top: 17px;
+}
+
+.thirdSinglePoint {
+	left: 103px;
+	top: 31px;
+}
+
+.fourthSinglePoint {
+	left: 103px;
+	top: 31px;
+}
+
+.tooltipsContainer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.cd-single-point {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.cd-single-point > a {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: inherit;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+@media all and (min-width: 768px) {
+	.cd-single-point::after {
+	  /* this is used to create the pulse animation */
+	  content: '';
+	  position: absolute;
+	  z-index: 1;
+	  width: 100%;
+	  height: 100%;
+	  top: 0;
+	  left: 0;
+	  border-radius: inherit;
+	  background-color: transparent;
+
+	  -webkit-animation: cd-pulse 2s infinite;
+	  -moz-animation: cd-pulse 2s infinite;
+	  animation: cd-pulse 2s infinite;
+	}
+}
+
+.cd-single-point.is-open::after {
+  /* remove pulse effect */
+  display: none;
+}
+.cd-single-point.is-open .cd-more-info {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s, -webkit-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s, -moz-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+}
+.cd-single-point.visited::after {
+  /* pulse effect no more active on visited elements */
+  display: none;
+}
+  .fourthTooltip .cd-single-point.is-open .cd-more-info.cd-left {
+    right: 265%;
+  }
+
+  .thirdTooltip .cd-single-point.is-open .cd-more-info.cd-left {
+    right: 340%;
+  }
+  
+  .firstTooltip .cd-single-point.is-open .cd-more-info.cd-right {
+    left: 300%;
+  }
+
+  .secondTooltip .cd-single-point.is-open .cd-more-info.cd-right {
+    left: 340%;
+  }
+
+
+@-webkit-keyframes cd-pulse {
+  0% {
+    -webkit-transform: scale(1);
+    box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+  }
+  50% {
+    box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+  }
+  100% {
+    -webkit-transform: scale(1.6);
+    box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0);
+  }
+}
+@-moz-keyframes cd-pulse {
+  0% {
+    -moz-transform: scale(1);
+    box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+  }
+  50% {
+    box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+  }
+  100% {
+    -moz-transform: scale(1.6);
+    box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0);
+  }
+}
+@keyframes cd-pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+  }
+  50% {
+    box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0.8);
+  }
+  100% {
+    -webkit-transform: scale(1.6);
+    -moz-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    -o-transform: scale(1.6);
+    transform: scale(1.6);
+    box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0);
+  }
+}
+.cd-single-point .cd-more-info {
+  z-index: 50000;
+  text-align: left;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 200px;
+  height: auto;
+  padding: 1em;
+  overflow-y: visible;
+  line-height: 1.4;
+  background: #e7eaee;
+  border-radius: 12px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s, -webkit-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s, -moz-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+}
+
+.cd-single-point .cd-more-info::before {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  display: none;
+  border: 8px solid transparent;
+}
+
+.cd-single-point .cd-more-info::before {
+	display: block;
+}
+.cd-single-point .cd-more-info.cd-left, .cd-single-point .cd-more-info.cd-right, .cd-single-point .cd-more-info.cd-left::before, .cd-single-point .cd-more-info.cd-right::before {
+	top: 50%;
+	bottom: auto;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.cd-single-point .cd-more-info.cd-left {
+	right: 160%;
+	left: auto;
+}
+.cd-single-point .cd-more-info.cd-left::before {
+	border-left-color: #e7eaee;
+	left: 100%;
+}
+.cd-single-point .cd-more-info.cd-right {
+	left: 160%;
+}
+.cd-single-point .cd-more-info.cd-right::before {
+	border-right-color: #e7eaee;
+	right: 100%;
+}
+
+.cd-single-point .cd-more-info p {
+	font-size: 11px;
+	color: #252525;
+}
+
+.cd-single-point .cd-more-info p span {
+	color: #72c8fa;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.cd-img-replace {
+  /* replace text with background images */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.firstTooltip .cd-single-point.is-open .cd-more-info.cd-bottom {
+    top: 200%;
+}
+
+.secondTooltip .cd-single-point.is-open .cd-more-info.cd-bottom {
+    top: 180%;
+}
+
+.thirdTooltip .cd-single-point.is-open .cd-more-info.cd-bottom {
+    top: 140%;
+    left: 200%;
+}
+
+.thirdTooltip .cd-single-point .cd-more-info.cd-bottom {
+    top: 260%;
+    left: 200%;
+}
+
+.fourthTooltip .cd-single-point.is-open .cd-more-info.cd-bottom {
+    top: 220%;
+}
+
+.cd-single-point .cd-more-info.cd-top, .cd-single-point .cd-more-info.cd-bottom {
+	left: 50%;
+	right: auto;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.cd-single-point .cd-more-info.cd-top::before, .cd-single-point .cd-more-info.cd-bottom::before {
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.cd-single-point .cd-more-info.cd-bottom {
+    top: 260%;
+}
+.cd-single-point .cd-more-info.cd-bottom::before {
+    border-bottom-color: #e7eaee;
+    bottom: 100%;
+}
+
+.complianceLargeHeader {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	right: 0;
+}
+
+.complianceLargeHeader h2 {
+	width: 70%;
+	max-width: 600px;
+	text-align: center;
+	color: #252525;
+	margin: auto;
+	font-size: 35px;
+	line-height: 1.2;
+	margin-bottom: 20px;
+}
+
+@media all and (max-width: 768px) {
+
+	.lineTransitions {
+		opacity: 0 !important;
+		visibility: hidden;
+		display: none;
+	}
+
+	#phoneWrapper {
+		width: 50%;
+		padding-top: 380px;
+	}
+
+	.cd-single-point .cd-more-info {
+		display: none;
+	}
+
+}
+
+@media all and (min-width: 769px) and (max-width: 1282px) {
+	.cd-single-point .cd-more-info {
+		width: 130px;
+		padding: 10px;
+	}
+}
