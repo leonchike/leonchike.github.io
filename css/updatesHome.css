@@ -53,8 +53,7 @@
 }
 
 .darkHomeH2{
-    text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 400;
     color: white;
     text-align: center;
     font-size: 30px;
@@ -541,8 +540,7 @@ s}
 }
 
 #darkSecurityWideContainer > h3{
-    text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 400;
     color: white;
     text-align: left;
     font-size: 24px;  
@@ -676,6 +674,7 @@ s}
 
 #whiteH2DarkUI{
     color: white;
+    text-transform: none;
 }
 
 #darkHomeh3pricing{
@@ -721,6 +720,8 @@ s}
 
 #kivvikWMAbout .darkHomeH2{
     color: #252525;
+    font-weight: 400;
+    text-transform: none;
 }
 
 #14DayFreeBold{
