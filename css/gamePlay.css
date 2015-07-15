@@ -615,4 +615,24 @@
     font-weight: 700;
 }
 
+#gamePlayPage3Pop .gameGuide h5{
+    padding-top: 5px;
+}
 
+#gamePlayPage5 .gameGuide h5{
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#gamePlayPage7 .gameGuide h5{
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#gamePlayStress .gameGuide h5{
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
