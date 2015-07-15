@@ -78,7 +78,7 @@
 
 .whiteSectionHeader{
     max-width: 300px;
-    height: 90px;
+    height: 120px;
     margin: 0px auto;
     margin-top: 40px;
 }
@@ -481,6 +481,19 @@
     border: 1px solid #8272fa;
 }
 
+.valueChange{
+    font-size: 20px !important;
+    margin-top: -10px;
+    font-weight: 700;
+}
+
+.valueChange {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    animation-duration: 1s;
+}
+
 /* Pump 1 */
 #gamePlayPage1 .bal5{
     display: none;
@@ -639,3 +652,9 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
+@keyframes .fadeOutUp{
+    animation-duration: 3s !important;
+    animation-delay: 3s !important;
+}
+
