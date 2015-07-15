@@ -359,6 +359,14 @@ a:visited{
     top: 50%;
 }
 
+#plane {
+  -webkit-animation-duration: 7s;
+  -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+    animation-duration: 7s;
+}
+
+
 #hotair{
     width: 200px;
     position: absolute;
@@ -366,7 +374,12 @@ a:visited{
     top: 30%;
 }
 
-
+#hotair {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+    animation-duration: 3s;
+}
 
 
 
