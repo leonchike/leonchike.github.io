@@ -1,5 +1,5 @@
 *{
-    font-family: 'Droid Sans', Helvetica;
+    font-family: 'Lato', Helvetica;
     text-decoration: none;
     margin: 0px;
     overflow-x: hidden;
@@ -102,19 +102,24 @@ a:visited{
     background-color: #70b9f1;
 }
 
+#riskSelectorPage{
+    background-color: #70b9f1;
+}
+
 #headerSectionSelector{
     max-width: 500px;
-    min-height: 150px;
+    height: 30%;
     margin: 0px auto;
-    margin-top: 100px;
 }
+
+
 
 #riskSelectorh2{
     text-align: center;
     color: white;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 30px;
 }
 
 #riskSelectorh3{
@@ -127,18 +132,39 @@ a:visited{
 
 #riskSelectorh4{
     text-align: center;
-    color: #d7e3f0;
-    font-weight: 300;
-    font-size: 26px;
-    padding-top: 10px;
+    color: #e55555;
+    font-weight: 700;
+    font-size: 2.5em;
+    padding-top: 20%;
+    text-transform: uppercase;
+}
+
+@media (max-height: 1200px){
+    #headerSectionSelector{
+        height: 25%;
+        margin-top: 20px;
+    }
+    #riskSelectorh4{
+        padding-top: 10%;
+    }
+}
+
+@media (max-height: 800px){
+    #headerSectionSelector{
+        height: 15%;
+        margin-top: 10px;
+    }
+    #riskSelectorh4{
+        padding-top: 2%;
+    }
 }
 
 #riskSelectorCont{
     max-width: 1400px;
-    min-height: 400px;
+    max-height: 70%;
     margin: 0px auto;
-    padding: 20px;
-    margin-top: 100px;
+    padding: 0px 2.5%;
+    animation-delay: 1s;
 }
 
 @media (max-height: 900px){
@@ -155,54 +181,125 @@ a:visited{
     height:auto;
     width: calc(100% / 3);
     float: left;
-    min-height: 300px;
+    height: 90%;
+}
+
+.riskImgCont{
+    height: 30%;
+    min-height: 400px;
 }
 
 .riskSelectorImg{
-    width: 160px;
+    max-width: 90%;
+    height: 90%;
     margin: 0px auto;
     display: block;
 }
 
+@media (max-height: 1200px){
+    .riskImgCont{
+        min-height: 280px;
+    }
+}
+
+@media (max-height: 800px){
+    .riskImgCont{
+        min-height: 200px;
+    }
+}
+
+.Safe{
+    animation-delay: 2s;
+}
+
+.mod{
+    animation-delay: 2.8s;
+}
+
+.dare{
+    animation-delay: 3.6s;
+}
+
 .riskselectorTitle{
     text-align: center;
-    color: #d7e3f0;
-    font-weight: 500;
+    color: #fff;
+    font-weight: 700;
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 20px;
+    animation-delay: 1.5s;
 }
 
 .riskselectorP{
     padding: 0px 6%;
     text-align: center;
     font-size: 18px;
-    color: white;
+    color: rgba(255,255,255,0.8);
     line-height: 26px;
     font-weight: 400;
+    animation-delay: 1.7s
 }
 
 #riskselectorSelect{
     width: calc(100% / 3);
     position: absolute;
-    margin-top: 360px;
+    bottom: 20%;
+    animation-delay: 4s;
 }
 
 #riskselectorSelect > a > p{
-    width: 130px;
-    padding: 10px;
+    width: 180px;
+    padding: 15px;
     border-radius: 5px;
     text-align:center;
-    color: white;
+    color: #fff;
     border: 1px solid #fff;
     opacity: 0.8;
     margin: 0px auto;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 #riskselectorSelect > a > p:hover{
     background: #8272fa;
     border: 1px solid #8272fa;
     opacity: 1;
+}
+
+@media (max-height: 20000px){
+    #riskselectorSelect{
+        bottom: 20%;
+    }
+}
+
+@media (max-height: 1800px){
+    #riskselectorSelect{
+        bottom: 20%;
+    }
+}
+
+@media (max-height: 1200px){
+    #riskselectorSelect{
+        bottom: 15%;
+    }
+}
+
+@media (max-height: 1200px){
+    #riskselectorSelect{
+        bottom: 15%;
+    }
+}
+
+@media (max-height: 1000px){
+    #riskselectorSelect{
+        bottom: 10%;
+    }
+}
+
+@media (max-height: 800px){
+    #riskselectorSelect{
+        bottom: 5%;
+    }
 }
 
 
@@ -346,6 +443,10 @@ a:visited{
 
 .underline{
     text-decoration: underline;
+}
+
+.bold{
+    font-weight: 900;
 }
 
 .skyline{
@@ -511,10 +612,15 @@ a:visited{
     font-size: 10px;
 }
 
+#presenationlink{
+    padding-left: 30px;
+    color: rgba(37,37,37,0.5);
+}
+
 
 #termsofusefooter{
     padding-left: 30px;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 #termsofusefooter:visited{
@@ -522,7 +628,9 @@ a:visited{
     color: rgba(37,37,37,0.5); 
 }
 
-
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
 
 #termsPage{
     overflow-y: scroll !important;

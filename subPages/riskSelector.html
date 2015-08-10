@@ -7,6 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link type="image/x-icon" href="https://s3.amazonaws.com/Web_Application_Assets/Global+Assets/kivvik_logo.png" rel="SHORTCUT ICON">
         <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
         <link href="../css/main.css" rel="stylesheet" type="text/css">
         <link href="../css/animations.css" rel="stylesheet" type="text/css">
         <link href="../css/animate.css" rel="stylesheet" type="text/css">
@@ -27,45 +29,45 @@
 </script>
 
 </head>
-    <body id="homePage" class="m-scene scene_element--fadeinup">
-        <div id="headerSectionSelector" class="animated fadeInUp">
-            <h2 id="riskSelectorh2">
-                Step 1
-            </h2>
-            <h3 id="riskSelectorh3">Behavior</h3>
-            <h4 id="riskSelectorh4">What kind of risk taker are you?</h4>
+    <body id="riskSelectorPage" class="m-scene scene_element--fadeinup">
+        <div id="headerSectionSelector" class="animated fadeInDownBig">
+            <h4 id="riskSelectorh4">What kind of risk<br> taker are you?</h4>
         </div>
         
-        <div id="riskSelectorCont" class="animated bounceIn">
+        <div id="riskSelectorCont" class="animated fadeInUp">
             <div class="riskSelectorItem">
-                <div id="riskselectorSelect">
-                    <a href="/gamePlay/walkthrough1.html"><p>Select</p></a>
+                <div id="riskselectorSelect" class="animated fadeIn">
+                    <a href="/gamePlay/walkthrough1.html"><p>This is me</p></a>
                 </div>
-                <img class="riskSelectorImg" src="../img/pigIcon.png" />
-                <h2 class="riskselectorTitle">Safe Better</h2>
-                <p class="riskselectorP">You prefer to play it safe when it comes to financial investments. You value the security of your investments over high risk but high return options. </p>
+                <div class="riskImgCont">
+                    <img class="riskSelectorImg Safe animated fadeIn" src="/img/walking.png" />
+                </div>
+                <h2 class="riskselectorTitle animated fadeInUp">Safe Better</h2>
+                <p class="riskselectorP animated fadeIn">You prefer to play it safe when it comes to financial investments. You value the security of your investments over high risk but high return options. </p>
                 
             </div>
             <div class="riskSelectorItem">
-                <div id="riskselectorSelect">
-                    <a href="/gamePlay/walkthrough1.html"><p>Select</p></a>
+                <div id="riskselectorSelect" class="animated fadeIn">
+                    <a href="/gamePlay/walkthrough1.html"><p>This is me</p></a>
                 </div>
-                <img class="riskSelectorImg" src="../img/pigIcon.png" />
-                <h2 class="riskselectorTitle">Moderate</h2>
-                <p class="riskselectorP">While you value the security of your investments, you can be pursuaded to invest in slightly more volitile stock options if, after doing some research, the investment looks good.</p>
+                <div class="riskImgCont">
+                    <img class="riskSelectorImg mod animated fadeIn" src="../img/moderate.png" />
+                </div>
+                <h2 class="riskselectorTitle animated fadeInUp">Moderate</h2>
+                <p class="riskselectorP animated fadeIn">While you value the security of your investments, you can be pursuaded to invest in slightly more volitile stock options if, after doing some research, the investment looks good.</p>
             </div>
             <div class="riskSelectorItem">
-                <div id="riskselectorSelect">
-                    <a href="/gamePlay/walkthrough1.html"><p>Select</p></a>
+                <div id="riskselectorSelect" class="animated fadeIn">
+                    <a href="/gamePlay/walkthrough1.html"><p>This is me</p></a>
                 </div>
-                <img class="riskSelectorImg" src="../img/pigIcon.png" />
-                <h2 class="riskselectorTitle">Daredevil</h2>
-                <p class="riskselectorP">You're no stranger to risk because, as an investor, you value investments that have potential for high-returns. </p>
+                <div class="riskImgCont">
+                    <img class="riskSelectorImg dare animated fadeIn" src="../img/daredevil.png" />
+                </div>
+                <h2 class="riskselectorTitle animated fadeInUp">Daredevil</h2>
+                <p class="riskselectorP animated fadeIn">You're no stranger to risk because, as an investor, you value investments that have potential for high-returns. </p>
             </div>
         </div>
         
-        
-    <div class="copyright">Copyright &copy; 2015 Kivvik Inc. All Rights Reserved. <a id="termsofusefooter" href='#' onclick='overlay()'>Terms of Use</a></div>
     
         <div id="overlay" >
          <div id="overlayContent" class="animated fadeInUpBig">

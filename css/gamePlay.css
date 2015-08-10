@@ -47,13 +47,14 @@
 #wtbtnNext{
     text-align: center;
     width: 150px;
-    padding: 10px;
+    padding: 15px;
     margin-top: 60px;
     border-radius: 5px;
     background-color: #8272fa;
     text-transform: uppercase;
-    font-weight: 700;
     opacity: 0.8;
+    font-weight: 900;
+    font-size: 23px;
 }
 
 #wtbtnNext:hover{
@@ -83,19 +84,25 @@
     margin-top: 40px;
 }
 
+#fadeDownBanks{
+    animation-delay: 1s;
+}
+
 .whiteSectionHeader h3{
     color: white;
     font-size: 18px;
     text-transform: uppercase;
     color: #92969c;
     text-align: center;
+    font-weight: 900;
 }
 
 .whiteSectionHeader p{
     color: #6dd9aa;
-    font-size: 36px;
+    font-size: 38px;
     text-align: center;
     padding-top: 20px;
+    font-weight: 700;
 }
 
 .whiteSectionContent{
@@ -109,14 +116,14 @@
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-top: 1.5px solid #d7e3f0;
-    border-bottom: 1.5px solid #d7e3f0;
+    border-top: 3px solid #d7e3f0;
+    border-bottom: 3px solid #d7e3f0;
     margin-bottom: 20px;
 }
 
 .wSrow{
     display: inline-block;
-    width: calc(100% / 4);
+    width: calc(100% / 3);
     height: 30px;
     float: left;
 }
@@ -125,7 +132,7 @@
     color: #c1c8d0;
     font-size: 18px;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 700;
     padding: 5px 0px;
 }
 
@@ -137,7 +144,7 @@
 
 .wSrow2{
     display: inline-block;
-    width: calc(100% / 4);
+    width: calc(100% / 3);
     height: 60px;
     float: left;
     margin-bottom: 20px;
@@ -161,27 +168,30 @@
 .upside{
     font-size: 16px;
     color: #6dd9aa;
+    font-weight: 700;
 }
 
 .downside{
     font-size: 16px;
     color: #f07575;
+    font-weight: 700;
 }
 
 .pumpAction{
     text-align: center;
     border-radius: 5px;
     height: 28px;
-    margin:0px;
-    margin-top: 5px;
+    margin:0px auto;
+    margin-top: 0px;
     padding: 0px; 
-    width: 95px;
-    font-size: 13px !important;
+    width: 125px;
+    font-size: 14px !important;
     color: #798293;
     border: #d7e3f0 solid 2px;
     text-transform: uppercase;
     float: right;
-    font-weight: 700;
+    font-weight: 900;
+    padding-bottom: 3px;
 }
 
 .pumpAction:hover{
@@ -238,6 +248,10 @@
     position: absolute;
 }
 
+#livesFadeUp{
+    animation-delay: 1s;
+}
+
 .livesContainer{
     width: 120px;
     margin: 0px auto;
@@ -271,7 +285,7 @@
 .livesBallonCounter p{
     color: white;
     font-size: 20px;
-    
+    font-weight: 700;
 }
 
 .ballonContainer{
@@ -310,12 +324,14 @@
     color: #92969c;
     font-size: 13px;
     text-transform: uppercase;
+    font-weight: 900;
 }
 
 .controlsHeaderItem p{
     color: #c1c8d0;
     font-size: 30px;
     padding-top: 10px;
+    font-weight: 700;
 }
 
 .controlsPumpContainer{
@@ -341,11 +357,13 @@
     padding: 10px;
     border-radius: 40px;
     color: #92969c;
-    font-size: 14px;
+    font-size: 12px;
     border: 1px #92969c solid;
     margin: 0px auto;
-    margin-top: 40px;
+    margin-top: 30px;
     opacity: 0.7;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .quitGame:hover{
@@ -434,18 +452,27 @@
     margin-top: -100px;
 }
 
+#balloonFloatUp{
+    animation-duration: 2s;
+}
+
 .balnum5{
-    width: 100px;
+    width: 160px;
     height: 60px;
     text-align: center;
     color: white;
     padding-top: 40px;
-    font-size: 24px;
+    font-size: 34px;
     position: absolute;
     left: 50%;
-    margin-left: -50px;
+    margin-left: -80px;
     top:50%;
-    margin-top: -50px;
+    margin-top: -65px;
+    font-weight: 900;
+}
+
+#newBalloon{
+    animation-delay: 1.5s;
 }
 
 .popAniGif{
@@ -620,12 +647,12 @@
 .gameGuide h5{
     text-align: center;
     color: rgba(255,255,255,0.9);
-    font-weight: 400;
+    font-weight: 600;
     padding-top: 15px;
 }
 
 .gameGuide h5 span{
-    font-weight: 700;
+    font-weight: 900;
 }
 
 

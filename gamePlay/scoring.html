@@ -7,6 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link type="image/x-icon" href="https://s3.amazonaws.com/Web_Application_Assets/Global+Assets/kivvik_logo.png" rel="SHORTCUT ICON">
         <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
         <link href="../css/main.css" rel="stylesheet" type="text/css">
         <link href="../css/animate.css" rel="stylesheet" type="text/css">
                 <link href="../css/gamePlay.css" rel="stylesheet" type="text/css">
@@ -29,24 +31,48 @@
 
 </head>
     <body id="scoring" class="m-scene scene_element--fadeinup">
-        <div id="scoringCont" class="animated bounceIn">
-            <video id="scorevid" autoplay loop poster="../vid/Graph.png">
-                <source src="../vid/Graph.mp4" type="video/mp4" /> 
-            </video>
+       
+    <div id="scoringTop">
+        <div id="scoreCont">
+            <div id="userscore">
+                <h2>Actual Risk Score</h2>
+                <p><span>89</span> - Daredevil!</p>
+                <div></div>
+                <h2>What you thought</h2>
+                <p><span class="red">55</span> - Moderate</p>
+            </div>
+            <div id="userGraph">
+                
+            </div>
+            <div id="userdifference">
+                <h3>Over Estimated by</h3>
+                <p>62%</p>
+            </div>
         </div>
-        <div id="scoreHeader" class="animated bounceIn">
-            <div class="scoreHeaderimg">
-                <img src="../img/mountain.png" id="scoreHeaderimg"/>
-            </div>
-            <div class="scoreHeaderCont">
-                <h1>Your Risk Score</h1>
-                <h2><span>89</span> - DareDevil!</h2>
-                <p>You’re the kind of investor that is faced with turbulant conditions and bellows, “Damn the torpedoes! Full speed ahead!” </p>
-            </div>
+    </div>
         
-        </div>
-        <a href="../index.html"><p class="callToActionbtn animated fadeInUp">let's Touch Base!</p></a>
-    <div class="copyright">Copyright &copy; 2015 Kivvik Inc. All Rights Reserved. <a id="termsofusefooter" href='#' onclick='overlay()'>Terms of Use</a></div>
+     <div id="scoringbottom">
+         <div id="bottomLeft">
+             <div id="textCont">
+                <h3><span>Risk</span> and your future</h3>
+                 <p>Risk assessment can affect everything from expecting a new child to purchasing a new car. Leveraging a Capital One Financial Planner can help you mitigate those risks associated with your life goals. Enter your email to be contacted by a Capital One Financial Advisor.</p>
+            </div>
+         </div>
+         <div id="bottomRight">
+             <div id="formCont">
+                <img id="cap1Logo" src="/img/cap1.png"/>
+                 <form action="MAILTO:chike@kivvik.com" method="post" enctype="text/plain">
+                    <input id="email" type="email" name="email" placeholder="Enter your email for financial consultation">
+                     <br>
+                     <input id="sendbtn" type="submit" value="Submit">
+                 </form>
+                 <p id="playAgain">Play Again</p>
+             </div>
+         </div>
+    </div>   
+        
+        
+    <div class="copyright">Copyright &copy; 2015 Kivvik Inc. All Rights Reserved. <a id="termsofusefooter" href='#' onclick='overlay()'>Terms of Use</a> <a id="presenationlink" href="/presentation/presentation_start.html">Presentation</a></div>
     
         <div id="overlay" >
          <div id="overlayContent" class="animated fadeInUpBig">

@@ -7,6 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link type="image/x-icon" href="https://s3.amazonaws.com/Web_Application_Assets/Global+Assets/kivvik_logo.png" rel="SHORTCUT ICON">
         <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
         <link href="../css/main.css" rel="stylesheet" type="text/css">
         <link href="../css/animate.css" rel="stylesheet" type="text/css">
                 <link href="../css/gamePlay.css" rel="stylesheet" type="text/css">
@@ -30,13 +32,13 @@
     <body id="gamePlayPage4">
         <div class="balloonSection">
             
-            <div class="ballonContainer">
+            <div id="balloonFloatUp" class="ballonContainer animated fadeInUpBig">
                 <div class="ballonSubCont">
                     <img class="bal1 animated pulse" src="../img/balloon.png" />
 
                 </div>
                 <div class="numbersInBalloon">
-                    <p class="balnum5 animated pulse">$235</p>
+                    <p id="newBalloon" class="balnum5 animated fadeIn">$235</p>
                 </div>
             </div>
             
@@ -64,20 +66,17 @@
                     <div class="whiteSectionContent">
                     <div class="wSCCol1">
                         <div class="wSrow">
-                            <p>Pumps</p>
-                        </div>
-                        <div class="wSrow">
                             <p>Upside</p>
                         </div>
                         <div class="wSrow">
                             <p>Downside</p>
                         </div>
-                        <div class="wSrow"></div>
+		<div class="wSrow">
+                            <p>Pumps</p>
+                        </div>
                     </div>
                     <div class="wSCol2">
-                        <div class="wSrow2">
-                            <p class="pump">0 Pumps</p>
-                        </div>
+                        
                         <div class="wSrow2">
                             <p class="upside">+ $235.<sup>00</sup></p>
                         </div>
@@ -89,9 +88,7 @@
                         </div>
                         </div>
                     <div class="wSCol2">
-                        <div class="wSrow2">
-                            <p class="pump">1 Pump</p>
-                        </div>
+                       
                         <div class="wSrow2">
                             <p class="upside">+ $2,130.<sup>00</sup></p>
                         </div>
@@ -99,13 +96,11 @@
                             <p class="downside">- $811.<sup>00</sup></p>
                         </div>
                         <div class="wSrow2">
-                            <p class="pumpAction">Inflate</p>
+                            <p class="pumpAction">1 pump</p>
                         </div>
                         </div>
                     <div class="wSCol2">
-                        <div class="wSrow2">
-                            <p class="pump">2 Pumps</p>
-                        </div>
+                        
                         <div class="wSrow2">
                             <p class="upside">+ $4,250.<sup>00</sup></p>
                         </div>
@@ -113,13 +108,11 @@
                             <p class="downside">- $1,060.<sup>00</sup></p>
                         </div>
                         <div class="wSrow2">
-                            <p class="pumpAction">Inflate</p>
+                            <p class="pumpAction">2 pumps</p>
                         </div>
                         </div>
                         <div class="wSCol2">
-                        <div class="wSrow2">
-                            <p class="pump ">3 Pumps</p>
-                        </div>
+                        
                         <div class="wSrow2">
                             <p class="upside">+ $7,000.<sup>00</sup></p>
                         </div>
@@ -127,13 +120,11 @@
                             <p class="downside">- $1,970.<sup>00</sup></p>
                         </div>
                         <div class="wSrow2">
-                            <a href="gameplay5.html"><p class="pumpAction">Inflate</p></a>
+                            <a href="gameplay5.html"><p class="pumpAction">3 pumps</p></a>
                         </div>
                         </div>
                         <div class="wSCol2">
-                        <div class="wSrow2">
-                            <p class="pump">4 Pumps</p>
-                        </div>
+                        
                         <div class="wSrow2">
                             <p class="upside">+ $9,000.<sup>00</sup></p>
                         </div>
@@ -141,13 +132,11 @@
                             <p class="downside">- $4,830.<sup>00</sup></p>
                         </div>
                         <div class="wSrow2">
-                            <p class="pumpAction">Inflate</p>
+                            <p class="pumpAction">4 pumps</p>
                         </div>
                         </div>
                         <div class="wSCol2">
-                        <div class="wSrow2">
-                            <p class="pump">5 Pumps</p>
-                        </div>
+                        
                         <div class="wSrow2">
                             <p class="upside">+ $9,850.<sup>00</sup></p>
                         </div>
@@ -155,7 +144,7 @@
                             <p class="downside">- $5,200.<sup>00</sup></p>
                         </div>
                         <div class="wSrow2">
-                            <p class="pumpAction ">Infate</p>
+                            <p class="pumpAction ">5 pumps</p>
                         </div>
                         </div>
                 </div>
@@ -187,7 +176,7 @@
             <h5>Let's try <span>3 Pumps</span></h5>
         </div>
         
-    <div class="copyright">Copyright &copy; 2015 Kivvik Inc. All Rights Reserved. <a id="termsofusefooter" href='#' onclick='overlay()'>Terms of Use</a></div>
+    
     
         <div id="overlay" >
          <div id="overlayContent" class="animated fadeInUpBig">
