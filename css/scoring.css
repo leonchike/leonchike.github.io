@@ -196,32 +196,13 @@
 }
 
 
-@media (max-width: 768px){
-    #userGraphImg{
-        width: 400px;
+#userGraphImg{
+        width: 90%;
         margin: 0px auto;
         display: block;
         position: relative;
-}
 }
 
-@media (max-width: 900px){
-    #userGraphImg{
-        width: 440px;
-        margin: 0px auto;
-        display: block;
-        position: relative;
-}
-}
-
-@media (max-width: 1200px){
-    #userGraphImg{
-        width: 600px;
-        margin: 0px auto;
-        display: block;
-        position: relative;
-}
-}
 
 
 
