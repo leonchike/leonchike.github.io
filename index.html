@@ -10,10 +10,13 @@
 
 <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
         
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-        
-        <link href="css/temp.css" rel="stylesheet" type="text/css">
-        
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href="css/animate.css" rel="stylesheet" type="text/css">
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/jquery.smoothState.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/overlay.js"></script>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -26,13 +29,145 @@
 </script>
 
 </head>
-
-<body>
-    <div id="mainDiv">
-        <h1>Kivvik Risk Game</h1>
-        <h2>For more details about the risk game, please contact us at <a href="">hello@kivvik.com</a></h2>
+    <body id="homePage" class="m-scene scene_element--fadeinup">
+        <div id="playbtnCont">
+            <a href="/subPages/riskSelector.html"><p id="playbtnHome" class="animated zoomIn">Play!</p></a>
         </div>
-    <div id="powered"><a id="poweredA" href="www.kivvik.com">Powered By KIVVIK</a></div>
-</body>
+        
+        
+        
+        <div id="homePageH1Cont">
+            <h1 class="animated pulse" id="hpH1">How <br><span id="hpH1Risk">risky</span> <br><span id="hpH1AY">are you?</span></h1>
+        </div>
+        <div class="skyline">
+            <img id="skylineImg" class="animated fadeInUp" src="img/Skyline.png"/>
+        </div>
+        <img id="plane" class="animated fadeInRightBig" src="img/Plane.png"/>
+        <img id="hotair" class="animated fadeInUpBig" src="img/HotAirBalloon.png"/>
+        
+        <div class="copyright">Copyright &copy; 2015 Kivvik Inc. All Rights Reserved. <a id="termsofusefooter" href='#' onclick='overlay()'>Terms of Use</a> <a id="presenationlink" href="/presentation/presentation_start.html">Presentation</a></div>
+    
+        <div id="overlay" >
+         <div id="overlayContent" class="animated fadeInUpBig">
+             <a id="overlayClose" href='#' onclick='overlay()'>x</a>
+            <section id="termsBody">
+            <h1>Kivvik Risk Demo Terms</h1>
+            <div id="TermsPBody">
+                <h3>OWNERSHIP OF SITE; AGREEMENT TO TERMS OF USE</h3>
+                These Terms and Conditions of Use (the “Terms of Use”) apply to the Kivvik web site located at <a href="https://www.kivvik.com">www.kivvik.com</a>, and all associated sites linked to <a href="https://www.kivvik.com">www.kivvik.com</a> by Kivvik, its subsidiaries and affiliates, including Kivvik sites around the world (collectively, the “Site”). The Site is the property of Kivvik Inc. (“Kivvik”) and its licensors. BY USING THE SITE, YOU AGREE TO THESE TERMS OF USE; IF YOU DO NOT AGREE, DO NOT USE THE SITE.<br><br>
+Kivvik reserves the right, at its sole discretion, to change, modify, add or remove portions of these Terms of Use, at any time. It is your responsibility to check these Terms of Use periodically for changes. Your continued use of the Site following the posting of changes will mean that you accept and agree to the changes. As long as you comply with these Terms of Use, Kivvik grants you a personal, non-exclusive, non-transferable, limited privilege to enter and use the Site.<br><br>
+                
+                <h3>CONTENT</h3>
 
+All text, graphics, user interfaces, visual interfaces, photographs, trademarks, logos, sounds, music, artwork and computer code (collectively, “Content”), including but not limited to the design, structure, selection, coordination, expression, “look and feel” and arrangement of such Content, contained on the Site is owned, controlled or licensed by or to Kivvik, and is protected by trade dress, copyright, patent and trademark laws, and various other intellectual property rights and unfair competition laws.<br><br>
+Except as expressly provided in these Terms of Use, no part of the Site and no Content may be copied, reproduced, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted or distributed in any way (including “mirroring”) to any other computer, server, Web site or other medium for publication or distribution or for any commercial enterprise, without Kivvik’s express prior written consent.<br><br>
+You may use information on Kivvik products and services (such as data sheets, knowledge base articles, and similar materials) purposely made available by Kivvik for downloading from the Site, provided that you (1) not remove any proprietary notice language in all copies of such documents, (2) use such information only for your personal, non-commercial informational purpose and do not copy or post such information on any networked computer or broadcast it in any media, (3) make no modifications to any such information, and (4) not make any additional representations or warranties relating to such documents.
+<br><br>
+                
+    <h3>YOUR USE OF THE SITE</h3>
+    You may not use any “deep-link”, “page-scrape”, “robot”, “spider” or other automatic device, program, algorithm or methodology, or any similar or equivalent manual process, to access, acquire, copy or monitor any portion of the Site or any Content, or in any way reproduce or circumvent the navigational structure or presentation of the Site or any Content, to obtain or attempt to obtain any materials, documents or information through any means not purposely made available through the Site. Kivvik reserves the right to bar any such activity.<br><br>
+You may not attempt to gain unauthorized access to any portion or feature of the Site, or any other systems or networks connected to the Site or to any Kivvik server, or to any of the services offered on or through the Site, by hacking, password “mining” or any other illegitimate means.
+You may not probe, scan or test the vulnerability of the Site or any network connected to the Site, nor breach the security or authentication measures on the Site or any network connected to the Site. You may not reverse look-up, trace or seek to trace any information on any other user of or visitor to the Site, or any other customer of Kivvik, including any Kivvik account not owned by you, to its source, or exploit the Site or any service or information made available or offered by or through the Site, in any way where the purpose is to reveal any information, including but not limited to personal identification or information, other than your own information, as provided for by the Site.<br><br>
+You agree that you will not take any action that imposes an unreasonable or disproportionately large load on the infrastructure of the Site or Kivvik’s systems or networks, or any systems or networks connected to the Site or to Kivvik.<br><br>
+You agree not to use any device, software or routine to interfere or attempt to interfere with the proper working of the Site or any transaction being conducted on the Site, or with any other person’s use of the Site.<br><br>
+You may not forge headers or otherwise manipulate identifiers in order to disguise the origin of any message or transmittal you send to Kivvik on or through the Site or any service offered on or through the Site. You may not pretend that you are, or that you represent, someone else, or impersonate any other individual or entity.<br><br>
+You may not use the Site or any Content for any purpose that is unlawful or prohibited by these Terms of Use, or to solicit the performance of any illegal activity or other activity which infringes the rights of Kivvik or others.<br><br>
+        <h3>PURCHASES; OTHER TERMS AND CONDITIONS</h3>
+Additional terms and conditions may apply to purchases of goods or services and to specific portions or features of the Site, including contests, promotions or other similar features, all of which terms are made a part of these Terms of Use by this reference. You agree to abide by such other terms and conditions, including where applicable representing that you are of sufficient legal age to use or participate in such service or feature. If there is a conflict between these Terms of Use and the terms posted for or applicable to a specific portion of the Site or for any service offered on or through the Site, the latter terms shall control with respect to your use of that portion of the Site or the specific service.<br><br>
+Kivvik’s obligations, if any, with regard to its products and services are governed solely by the agreements pursuant to which they are provided, and nothing on this Site should be construed to alter such agreements.
+Kivvik may make changes to any products or services offered on the Site, or to the applicable prices for any such products or services, at any time, without notice. The materials on the Site with respect to products and services may be out of date, and Kivvik makes no commitment to update the materials on the Site with respect to such products and services.<br><br>
+The following terms also govern and apply to your use of the Site, and they are incorporated herein by this reference:<br>
+Rights & Permissions<br>
+Trademarks<br><br>
+Each of these policies may be changed from time to time and are effective immediately upon posting such changes on the Site.<br><br>
+
+    <h3>PRIVACY</h3>   
+Kivvik’s Privacy Policy applies to use of this Site, and its terms are made a part of these Terms of Use by this reference. To view Kivvik’s Privacy Policy, <a href="https://www.kivvik.com/legal/privacypolicy.html">click here</a>. Additionally, by using the Site, you acknowledge and agree that Internet transmissions are never completely private or secure. You understand that any message or information you send to the Site may be read or intercepted by others, even if there is a special notice that a particular transmission (for example, credit card information) is encrypted.<br><br>
+                
+    <h3>VIOLATION OF THESE TERMS OF USE</h3>
+    Kivvik may disclose any information we have about you (including your identity) if we determine that such disclosure is necessary in connection with any investigation or complaint regarding your use of the Site, or to identify, contact or bring legal action against someone who may be causing injury to or interference with (either intentionally or unintentionally) Kivvik’s rights or property, or the rights or property of visitors to or users of the Site, including Kivvik’s customers. Kivvik reserves the right at all times to disclose any information that Kivvik deems necessary to comply with any applicable law, regulation, legal process or governmental request. Kivvik also may disclose your information when Kivvik determines that applicable law requires or permits such disclosure, including exchanging information with other companies and organizations for fraud protection purposes.<br><br>
+You acknowledge and agree that Kivvik may preserve any transmittal or communication by you with Kivvik through the Site or any service offered on or through the Site, and may also disclose such data if required to do so by law or Kivvik determines that such preservation or disclosure is reasonably necessary to (1) comply with legal process, (2) enforce these Terms of Use, (3) respond to claims that any such data violates the rights of others, or (4) protect the rights, property or personal safety of Kivvik, its employees, users of or visitors to the Site, and the public.<br><br>
+You agree that Kivvik may, in its sole discretion and without prior notice, terminate your access to the Site and/or block your future access to the Site if we determine that you have violated these Terms of Use or other agreements or guidelines which may be associated with your use of the Site. You also agree that any violation by you of these Terms of Use will constitute an unlawful and unfair business practice, and will cause irreparable harm to Kivvik, for which monetary damages would be inadequate, and you consent to Kivvik obtaining any injunctive or equitable relief that Kivvik deems necessary or appropriate in such circumstances. These remedies are in addition to any other remedies Kivvik may have at law or in equity.<br><br>
+You agree that Kivvik may, in its sole discretion and without prior notice, terminate your access to the Site, for cause, which includes (but is not limited to) (1) requests by law enforcement or other government agencies, (2) a request by you (self-initiated account deletions), (3) discontinuance or material modification of the Site or any service offered on or through the Site, or (4) unexpected technical issues or problems.<br><br>
+If Kivvik does take any legal action against you as a result of your violation of these Terms of Use, Kivvik will be entitled to recover from you, and you agree to pay, all reasonable attorneys’ fees and costs of such action, in addition to any other relief granted to Kivvik. You agree that Kivvik will not be liable to you or to any third party for termination of your access to the Site as a result of any violation of these Terms of Use.<br><br>
+                
+        <h3>GOVERNING LAW; DISPUTE RESOLUTION</h3>   
+    You agree that all matters relating to your access to or use of the Site, including all disputes, will be governed by the laws of the United States and by the laws of the State of Maryland without regard to its conflicts of laws provisions. You agree to the personal jurisdiction by and venue in the state and federal courts in Montgomery County, Maryland, and waive any objection to such jurisdiction or venue. The preceding provision regarding venue does not apply if you are a consumer based in the European Union. If you are a consumer based in the European Union, you may make a claim in the courts of the country where you reside. Any claim under these Terms of Use must be brought within one (1) year after the cause of action arises, or such claim or cause of action is barred. Claims made under the separate terms and conditions of purchase for goods and services are not subject to this limitation. No recovery may be sought or received for damages other than out-of-pocket expenses, except that the prevailing party will be entitled to costs and attorneys’ fees. In the event of any controversy or dispute between Kivvik and you arising out of or in connection with your use of the Site, the parties shall attempt, promptly and in good faith, to resolve any such dispute. If we are unable to resolve any such dispute within a reasonable time (not to exceed thirty (30) days), then either party may submit such controversy or dispute to mediation. If the dispute cannot be resolved through mediation, then the parties shall be free to pursue any right or remedy available to them under applicable law.<br><br>
+                
+        <h3>FEEDBACK AND INFORMATION</h3>
+        
+ Any feedback you provide at this site shall be deemed to be non-confidential. Kivvik shall be free to use such information on an unrestricted basis.<br><br>
+The information contained in this web site is subject to change without notice.<br><br>
+Copyright © 2015 Kivvik Inc. All rights reserved.<br><br>
+Kivvik Inc., 387 Technology Drive, College Park MD 20740<br><br>
+Updated by The Kivvik Legal Team on July 19, 2015   <br><br>        
+                
+</div>
+        </section>
+         </div>
+        </div>
+        
+<div class="copyright">Copyright &copy; 2015 Kivvik Inc. All Rights Reserved. <a id="termsofusefooter" href='#' onclick='overlay()'>Terms of Use</a></div>
+    
+        <div id="overlay" >
+         <div id="overlayContent" class="animated fadeInUpBig">
+             <a id="overlayClose" href='#' onclick='overlay()'>x</a>
+            <section id="termsBody">
+            <h1>Kivvik Risk Demo Terms</h1>
+            <div id="TermsPBody">
+                <h3>OWNERSHIP OF SITE; AGREEMENT TO TERMS OF USE</h3>
+                These Terms and Conditions of Use (the “Terms of Use”) apply to the Kivvik web site located at <a href="https://www.kivvik.com">www.kivvik.com</a>, and all associated sites linked to <a href="https://www.kivvik.com">www.kivvik.com</a> by Kivvik, its subsidiaries and affiliates, including Kivvik sites around the world (collectively, the “Site”). The Site is the property of Kivvik Inc. (“Kivvik”) and its licensors. BY USING THE SITE, YOU AGREE TO THESE TERMS OF USE; IF YOU DO NOT AGREE, DO NOT USE THE SITE.<br><br>
+Kivvik reserves the right, at its sole discretion, to change, modify, add or remove portions of these Terms of Use, at any time. It is your responsibility to check these Terms of Use periodically for changes. Your continued use of the Site following the posting of changes will mean that you accept and agree to the changes. As long as you comply with these Terms of Use, Kivvik grants you a personal, non-exclusive, non-transferable, limited privilege to enter and use the Site.<br><br>
+                
+                <h3>CONTENT</h3>
+
+All text, graphics, user interfaces, visual interfaces, photographs, trademarks, logos, sounds, music, artwork and computer code (collectively, “Content”), including but not limited to the design, structure, selection, coordination, expression, “look and feel” and arrangement of such Content, contained on the Site is owned, controlled or licensed by or to Kivvik, and is protected by trade dress, copyright, patent and trademark laws, and various other intellectual property rights and unfair competition laws.<br><br>
+Except as expressly provided in these Terms of Use, no part of the Site and no Content may be copied, reproduced, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted or distributed in any way (including “mirroring”) to any other computer, server, Web site or other medium for publication or distribution or for any commercial enterprise, without Kivvik’s express prior written consent.<br><br>
+You may use information on Kivvik products and services (such as data sheets, knowledge base articles, and similar materials) purposely made available by Kivvik for downloading from the Site, provided that you (1) not remove any proprietary notice language in all copies of such documents, (2) use such information only for your personal, non-commercial informational purpose and do not copy or post such information on any networked computer or broadcast it in any media, (3) make no modifications to any such information, and (4) not make any additional representations or warranties relating to such documents.
+<br><br>
+                
+    <h3>YOUR USE OF THE SITE</h3>
+    You may not use any “deep-link”, “page-scrape”, “robot”, “spider” or other automatic device, program, algorithm or methodology, or any similar or equivalent manual process, to access, acquire, copy or monitor any portion of the Site or any Content, or in any way reproduce or circumvent the navigational structure or presentation of the Site or any Content, to obtain or attempt to obtain any materials, documents or information through any means not purposely made available through the Site. Kivvik reserves the right to bar any such activity.<br><br>
+You may not attempt to gain unauthorized access to any portion or feature of the Site, or any other systems or networks connected to the Site or to any Kivvik server, or to any of the services offered on or through the Site, by hacking, password “mining” or any other illegitimate means.
+You may not probe, scan or test the vulnerability of the Site or any network connected to the Site, nor breach the security or authentication measures on the Site or any network connected to the Site. You may not reverse look-up, trace or seek to trace any information on any other user of or visitor to the Site, or any other customer of Kivvik, including any Kivvik account not owned by you, to its source, or exploit the Site or any service or information made available or offered by or through the Site, in any way where the purpose is to reveal any information, including but not limited to personal identification or information, other than your own information, as provided for by the Site.<br><br>
+You agree that you will not take any action that imposes an unreasonable or disproportionately large load on the infrastructure of the Site or Kivvik’s systems or networks, or any systems or networks connected to the Site or to Kivvik.<br><br>
+You agree not to use any device, software or routine to interfere or attempt to interfere with the proper working of the Site or any transaction being conducted on the Site, or with any other person’s use of the Site.<br><br>
+You may not forge headers or otherwise manipulate identifiers in order to disguise the origin of any message or transmittal you send to Kivvik on or through the Site or any service offered on or through the Site. You may not pretend that you are, or that you represent, someone else, or impersonate any other individual or entity.<br><br>
+You may not use the Site or any Content for any purpose that is unlawful or prohibited by these Terms of Use, or to solicit the performance of any illegal activity or other activity which infringes the rights of Kivvik or others.<br><br>
+        <h3>PURCHASES; OTHER TERMS AND CONDITIONS</h3>
+Additional terms and conditions may apply to purchases of goods or services and to specific portions or features of the Site, including contests, promotions or other similar features, all of which terms are made a part of these Terms of Use by this reference. You agree to abide by such other terms and conditions, including where applicable representing that you are of sufficient legal age to use or participate in such service or feature. If there is a conflict between these Terms of Use and the terms posted for or applicable to a specific portion of the Site or for any service offered on or through the Site, the latter terms shall control with respect to your use of that portion of the Site or the specific service.<br><br>
+Kivvik’s obligations, if any, with regard to its products and services are governed solely by the agreements pursuant to which they are provided, and nothing on this Site should be construed to alter such agreements.
+Kivvik may make changes to any products or services offered on the Site, or to the applicable prices for any such products or services, at any time, without notice. The materials on the Site with respect to products and services may be out of date, and Kivvik makes no commitment to update the materials on the Site with respect to such products and services.<br><br>
+The following terms also govern and apply to your use of the Site, and they are incorporated herein by this reference:<br>
+Rights & Permissions<br>
+Trademarks<br><br>
+Each of these policies may be changed from time to time and are effective immediately upon posting such changes on the Site.<br><br>
+
+    <h3>PRIVACY</h3>   
+Kivvik’s Privacy Policy applies to use of this Site, and its terms are made a part of these Terms of Use by this reference. To view Kivvik’s Privacy Policy, <a href="https://www.kivvik.com/legal/privacypolicy.html">click here</a>. Additionally, by using the Site, you acknowledge and agree that Internet transmissions are never completely private or secure. You understand that any message or information you send to the Site may be read or intercepted by others, even if there is a special notice that a particular transmission (for example, credit card information) is encrypted.<br><br>
+                
+    <h3>VIOLATION OF THESE TERMS OF USE</h3>
+    Kivvik may disclose any information we have about you (including your identity) if we determine that such disclosure is necessary in connection with any investigation or complaint regarding your use of the Site, or to identify, contact or bring legal action against someone who may be causing injury to or interference with (either intentionally or unintentionally) Kivvik’s rights or property, or the rights or property of visitors to or users of the Site, including Kivvik’s customers. Kivvik reserves the right at all times to disclose any information that Kivvik deems necessary to comply with any applicable law, regulation, legal process or governmental request. Kivvik also may disclose your information when Kivvik determines that applicable law requires or permits such disclosure, including exchanging information with other companies and organizations for fraud protection purposes.<br><br>
+You acknowledge and agree that Kivvik may preserve any transmittal or communication by you with Kivvik through the Site or any service offered on or through the Site, and may also disclose such data if required to do so by law or Kivvik determines that such preservation or disclosure is reasonably necessary to (1) comply with legal process, (2) enforce these Terms of Use, (3) respond to claims that any such data violates the rights of others, or (4) protect the rights, property or personal safety of Kivvik, its employees, users of or visitors to the Site, and the public.<br><br>
+You agree that Kivvik may, in its sole discretion and without prior notice, terminate your access to the Site and/or block your future access to the Site if we determine that you have violated these Terms of Use or other agreements or guidelines which may be associated with your use of the Site. You also agree that any violation by you of these Terms of Use will constitute an unlawful and unfair business practice, and will cause irreparable harm to Kivvik, for which monetary damages would be inadequate, and you consent to Kivvik obtaining any injunctive or equitable relief that Kivvik deems necessary or appropriate in such circumstances. These remedies are in addition to any other remedies Kivvik may have at law or in equity.<br><br>
+You agree that Kivvik may, in its sole discretion and without prior notice, terminate your access to the Site, for cause, which includes (but is not limited to) (1) requests by law enforcement or other government agencies, (2) a request by you (self-initiated account deletions), (3) discontinuance or material modification of the Site or any service offered on or through the Site, or (4) unexpected technical issues or problems.<br><br>
+If Kivvik does take any legal action against you as a result of your violation of these Terms of Use, Kivvik will be entitled to recover from you, and you agree to pay, all reasonable attorneys’ fees and costs of such action, in addition to any other relief granted to Kivvik. You agree that Kivvik will not be liable to you or to any third party for termination of your access to the Site as a result of any violation of these Terms of Use.<br><br>
+                
+        <h3>GOVERNING LAW; DISPUTE RESOLUTION</h3>   
+    You agree that all matters relating to your access to or use of the Site, including all disputes, will be governed by the laws of the United States and by the laws of the State of Maryland without regard to its conflicts of laws provisions. You agree to the personal jurisdiction by and venue in the state and federal courts in Montgomery County, Maryland, and waive any objection to such jurisdiction or venue. The preceding provision regarding venue does not apply if you are a consumer based in the European Union. If you are a consumer based in the European Union, you may make a claim in the courts of the country where you reside. Any claim under these Terms of Use must be brought within one (1) year after the cause of action arises, or such claim or cause of action is barred. Claims made under the separate terms and conditions of purchase for goods and services are not subject to this limitation. No recovery may be sought or received for damages other than out-of-pocket expenses, except that the prevailing party will be entitled to costs and attorneys’ fees. In the event of any controversy or dispute between Kivvik and you arising out of or in connection with your use of the Site, the parties shall attempt, promptly and in good faith, to resolve any such dispute. If we are unable to resolve any such dispute within a reasonable time (not to exceed thirty (30) days), then either party may submit such controversy or dispute to mediation. If the dispute cannot be resolved through mediation, then the parties shall be free to pursue any right or remedy available to them under applicable law.<br><br>
+                
+        <h3>FEEDBACK AND INFORMATION</h3>
+        
+ Any feedback you provide at this site shall be deemed to be non-confidential. Kivvik shall be free to use such information on an unrestricted basis.<br><br>
+The information contained in this web site is subject to change without notice.<br><br>
+Copyright © 2015 Kivvik Inc. All rights reserved.<br><br>
+Kivvik Inc., 387 Technology Drive, College Park MD 20740<br><br>
+Updated by The Kivvik Legal Team on July 19, 2015   <br><br>        
+                
+</div>
+        </section>
+         </div>
+        </div>
+        
+    </body>
 </html>
