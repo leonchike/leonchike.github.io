@@ -1,0 +1,212 @@
+#scoring{
+    background-color: #70b9f1;
+    overflow: scroll !important;
+}
+
+#scoringTop{
+    height: 60%;
+    width: 100%;
+}
+
+#scoringbottom{
+    width: 100%;
+    height: 40%;
+    background: #295786;
+}
+
+#bottomLeft{
+    width: 55%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+#bottomRight{
+    width: 45%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+#textCont{
+    max-width: 1000px;
+    width: 90%;
+    float: right;
+    padding-right: 5%;
+}
+
+#textCont h3{
+    padding-top: 10%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.3em;
+    font-weight: 700;
+}
+
+#textCont h3 span{
+    color: #efc75e;
+}
+
+#textCont p{
+    color: white;
+    font-size: 1.3em;
+    padding-top: 10px;
+    line-height: 1.3em;
+}
+
+#formCont{
+    width: 90%;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+#cap1Logo{
+    width: 200px;
+}
+
+#email{
+    width: 100%;
+    max-width: 400px;
+    margin-top: 30px;
+    background-color: #13355a;
+    padding: 14px;
+    color: #d7e3f0;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 900;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+#sendbtn{
+    color: white;
+    background-color: #8272fa;
+    padding: 13px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 900;
+    width: 180px;
+    border: none;
+    border-radius: 4px;
+}
+
+#playAgain{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 255px;
+    text-decoration: underline;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+
+#scoring .copyright{
+    color: rgba(255,255,255,0.8);
+}
+
+#scoring #presenationlink{
+    color: rgba(255,255,255,0.8);
+}
+
+
+#scoreCont{
+    width: 90%;
+    margin: 0px auto;
+    max-width: 2000px;
+    height: 400px;
+    margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+    top: -30%;
+}
+
+#userscore{
+    width: 30%;
+    position: relative;
+    display: inline-block;
+    float: left;
+    height: 100%;
+}
+
+#userscore h2{
+    font-size: 18px;
+    color: #d7e3f0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#userscore p{
+    font-size: 33px;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+#userscore p span{
+    color: #f1cd70
+}
+
+.red{
+    color: #f07575 !important;
+}
+
+#userscore div{
+    width: 100%;
+    background: rgba(255,255,255,0.6);
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+
+#userGraph{
+    width: 50%;
+    position: relative;
+    display: inline-block;
+    float: left;
+    height: 100%;
+}
+
+#userdifference{
+    width: 20%;
+    position: relative;
+    display: inline-block;
+    float: left;
+    height: 100%;
+}
+
+#userdifference h3{
+    font-size: 18px;
+    color: #d7e3f0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#userdifference p{
+    font-size: 88px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+#userGraphImg{
+        width: 90%;
+        margin: 0px auto;
+        display: block;
+        position: relative;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,140 @@
+#presentationCont{
+    width: 100%;
+    height: 100%;
+}
+
+#kivvikLogo{
+    width: 200px;
+    position: relative;
+    display: block;
+    margin: auto;
+    height: auto;
+    margin-top: 25%;
+}
+
+#kivvikLogo img{
+    width: 100%;
+}
+
+#leftTextPanel{
+    width: 65%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+
+#rightImgPanel{
+    width: 35%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.img1{
+    background: url(/img/presenation/img1.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.img2{
+    background: url(/img/presenation/img2.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.img3{
+    background: url(/img/presenation/img3.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.img4{
+    background: url(/img/presenation/img4.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.textContentArea{
+    max-width: 800px;
+    width: 90%;
+    margin: 0px auto;
+}
+
+#presenationH1{
+    font-size: 3em;
+    color: #373737;
+    padding-top: 20%;
+    font-weight: 400;
+}
+
+#presenationH1{
+    animation-delay: 1s;
+}
+
+
+#nextbuttons{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: calc(50% - 200px);
+    z-index: 100000;
+}
+
+#prevCont{
+    height: 100%;
+    width: 100px;
+    display: inline-block;
+    float: left;
+}
+
+#nextCont{
+    height: 100%;
+    width: 100px;
+    display: inline-block;
+    float: right;
+}
+
+
+#leftArrow{
+    height: 80px;
+    margin-top: 160px;
+    float: left;
+}
+
+#rightArrow{
+    height: 80px;
+    margin-top: 160px;
+    float: right;
+}
+
+#leftArrow, #rightArrow{
+    opacity: 0;
+}
+
+#leftArrow:hover, #rightArrow:hover{
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
