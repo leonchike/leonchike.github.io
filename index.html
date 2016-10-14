@@ -1,7 +1,7 @@
 <html>
 <head>
         <meta charset="utf-8" />
-        <title>Practice!</title>
+        <title>Flight Log</title>
 	
         <meta name="description" content="Practice for my soul">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,51 +11,516 @@
         
         <link href="/css/main.css" rel="stylesheet" type="text/css">
         
-        <link href='https://fonts.googleapis.com/css?family=Engagement|Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Open+Sans:300,400,600,700,800" rel="stylesheet">
 
 </head>
+    
 <body>
-    <section class="probs" id="prob1">
-        <h3>
-            Create CSS and HTML Circle
-        </h3>
-        <div id="button">
-            +
+    <header>
+        <div id="redTopBar">
         </div>
     
-    </section>
+        <form id="topHeaderForm">
+            <input class="topHeaderInput" id="flightnumber" placeholder="AA11" type="text" name="flightNumber" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Flight Number'"><br>
+            
+            <input class="topHeaderInput" id="airline" type="text" name="airline" placeholder="American Airlines" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Airline'"><br>
+            
+            <input class="topHeaderInput" id="equipment" type="text" name="equipment" placeholder="B777-300ER" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Equipment'"><br>
+            
+            <input class="topHeaderInput" id="registration" type="text" name="registration" placeholder="N-9577" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Plane Registration'"><br>
+            
+            <input class="topHeaderInput" id="date" type="text" name="date" placeholder="October 1, 2016" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Date here'"><br>
+            
+        </form>
     
-    <section class="probs" id="cssBox">
-        <h3>
-            CSS Box Model
-        </h3>
-        <p>
-            Blue box item, grey padding
-        </p>
-        <div id="cssBoxItem">
-            <div id="cssBoxItemInside">
+    </header>
+    
+    <section id="mainBody">
+        <div class="bodySections">
+            <h3>Flight Information</h3>
+            
+            <div class="bodyInputContainer">
+                
+                <div class="bodyInputBox W50" id="deptAirport">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Departure Airport</h4>
+                    </div>
+                    <div class="bodyInputBoxInput">
+                        <input class="bodyInput" id="deptAirport" type="text" name="deptAirport" placeholder="KJFK" onfocus="this.placeholder = ''" onblur="this.placeholder = 'KJFK '" maxlength="4">
+                    </div>
+                </div>
+                
+                <div class="bodyInputBox W50" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Departure Airport</h4>
+                    </div>
+                    <div class="bodyInputBoxInput">
+                        <input class="bodyInput" id="arrAirport" type="text" name="arrAirport" placeholder="EGLL" onfocus="this.placeholder = ''" onblur="this.placeholder = 'EGLL '" maxlength="4">
+                    </div>
+                </div>
+                
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Departure local</h4>
+                    </div>
+                    <div class="bodyInputBoxInput">
+                        <input class="bodyInput" id="deptLocalTime" type="text" name="deptLocalTime" placeholder="00:00 PDT" onfocus="this.placeholder = ''" onblur="this.placeholder = '00:00 PDT '" maxlength="10">
+                    </div>
+                </div>
+                
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Departure zulu</h4>
+                    </div>
+                    <div class="bodyInputBoxInput">
+                        <input class="bodyInput" id="deptZuluTime" type="text" name="deptZuluTime" placeholder="00:00" onfocus="this.placeholder = ''" onblur="this.placeholder = '00:00'" maxlength="5">
+                    </div>
+                </div>
+                
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Arrival local</h4>
+                    </div>
+                    <div class="bodyInputBoxInput">
+                        <input class="bodyInput" id="arrLocalTime" type="text" name="arrLocalTime" placeholder="00:00 BST" onfocus="this.placeholder = ''" onblur="this.placeholder = '00:00 PDT '" maxlength="10">
+                    </div>
+                </div>
+                
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Arrival zulu</h4>
+                    </div>
+                    <div class="bodyInputBoxInput">
+                        <input class="bodyInput" id="arrZuluTime" type="text" name="arrZuluTime" placeholder="00:00" onfocus="this.placeholder = ''" onblur="this.placeholder = '00:00'" maxlength="5">
+                    </div>
+                </div>
+                
+                <div class="bodyInputBox W50" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Estimated Flight Time</h4>
+                    </div>
+                    <div class="bodyInputBoxInput">
+                        <input class="bodyInput" id="estTime" type="text" name="estTime" placeholder="12:00" onfocus="this.placeholder = ''" onblur="this.placeholder = '12:00'" maxlength="5">
+                    </div>
+                </div>
+                
+                <div class="bodyInputBox W50" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Past Average Flight Time</h4>
+                    </div>
+                    <div class="bodyInputBoxInput">
+                        <input class="bodyInput" id="pastTime" type="text" name="pastTime" placeholder="11:50" onfocus="this.placeholder = ''" onblur="this.placeholder = '11:50'" maxlength="5">
+                    </div>
+                </div>
+                
+                <div class="bodyInputBox W50" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Departure Airport</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase">
+                        <input class="bodyInput" id="deptAirport" type="text" name="deptAirport" placeholder="John F. Kennedy" onfocus="this.placeholder = ''" onblur="this.placeholder = 'John F. Kennedy'" maxlength="25">
+                    </div>
+                </div>
+                
+                <div class="bodyInputBox W50" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Arrival Airport</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase">
+                        <input class="bodyInput" id="arrAirport" type="text" name="arrAirport" placeholder="London Heathrow" onfocus="this.placeholder = ''" onblur="this.placeholder = 'London Heathrow'" maxlength="25">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="bodySections">
+            <h3>Pre-Flight</h3>
+            
+            <div class="bodyInputContainer">                
+                <div class="bodyInputBox W33" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Zero Fuel Weight (KGS)</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase">
+                        <input class="bodyInput" id="zfw" type="text" name="zfw" placeholder="200,000" onfocus="this.placeholder = ''" onblur="this.placeholder = '200,000'" maxlength="8">
+                    </div>
+                </div>
+                <div class="bodyInputBox W33" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Takeoff Weight (KGS)</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase">
+                        <input class="bodyInput" id="tow" type="text" name="tow" placeholder="300,000" onfocus="this.placeholder = ''" onblur="this.placeholder = '300,000'" maxlength="8">
+                    </div>
+                </div>
+                <div class="bodyInputBox W33" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Max Takeoff Weight (KGS)</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase">
+                        <input class="bodyInput" id="mtow" type="text" name="mtow" placeholder="352,000" onfocus="this.placeholder = ''" onblur="this.placeholder = '352,000'" maxlength="8">
+                    </div>
+                </div>
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Min Takeoff Fuel (KGS)</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase">
+                        <input class="bodyInput" id="mintof" type="text" name="mintof" placeholder="20,000" onfocus="this.placeholder = ''" onblur="this.placeholder = '20,000'" maxlength="8">
+                    </div>
+                </div>
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Extra Fuel</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase">
+                        <input class="bodyInput" id="exfuel" type="text" name="exfuel" placeholder="5,000" onfocus="this.placeholder = ''" onblur="this.placeholder = '5,000'" maxlength="8">
+                    </div>
+                </div>
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Taxi Fuel</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase">
+                        <input class="bodyInput" id="taxifuel" type="text" name="taxifuel" placeholder="3,000" onfocus="this.placeholder = ''" onblur="this.placeholder = '3,000'" maxlength="8">
+                    </div>
+                </div>
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Total Fuel</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase">
+                        <input class="bodyInput" id="taxifuel" type="text" name="taxifuel" placeholder="28,000" onfocus="this.placeholder = ''" onblur="this.placeholder = '28,000'" maxlength="8">
+                    </div>
+                </div>
+                
+                <div class="bodyInputBox W33" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Fuel Factor</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase">
+                        <input class="bodyInput" id="fuelfactor" type="text" name="fuelfactor" placeholder="P00" onfocus="this.placeholder = ''" onblur="this.placeholder = 'P00'" maxlength="8">
+                    </div>
+                </div>
+                <div class="bodyInputBox W33" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Distance NM</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase">
+                        <input class="bodyInput" id="disNM" type="text" name="disNM" placeholder="2,000" onfocus="this.placeholder = ''" onblur="this.placeholder = '2,000'" maxlength="8">
+                    </div>
+                </div>
+                <div class="bodyInputBox W33" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>ARIAC Cycle</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase">
+                        <input class="bodyInput" id="aCycle" type="text" name="aCycle" placeholder="1611" onfocus="this.placeholder = ''" onblur="this.placeholder = '1611'" maxlength="8">
+                    </div>
+                </div>
+                <div class="bodyInputBox W100 flightPlanContainer" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Flight Plan</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <textarea class="bodyInput flightPlanC" id="flightPlan" type="text" name="flightPlan" placeholder="LOVE" onfocus="this.placeholder = ''" onblur="this.placeholder = 'LOVE'"></textarea>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    
+    
+        <div class="bodySections">
+            <h3>ATIS</h3>
+            
+            <div class="bodyInputContainer">                
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Frequency</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput Frequency" id="Frequency" type="text" name="Frequency" placeholder="121.75" onfocus="this.placeholder = ''" onblur="this.placeholder = '121.75'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Wind</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput " id="windATIS" type="text" name="windATIS" placeholder="301/9" onfocus="this.placeholder = ''" onblur="this.placeholder = '301/9'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Temperature (°C)</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput " id="tempATIS" type="text" name="tempATIS" placeholder="27" onfocus="this.placeholder = ''" onblur="this.placeholder = '27'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Runways In Use</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput " id="rwATIS" type="text" name="rwATIS" placeholder="7L, 7C" onfocus="this.placeholder = ''" onblur="this.placeholder = '7L, 7C'">
+                    </div>
+                </div>
                 
             </div>
         </div>
         
-    </section>
-    
-    <section id="JvC">
-        <div id="jvcCont">
-            <div class="jvcBox" id="jvcChike">
-                <div class="jvcInside" id="JjvcInside">
-                    <h4>Jamine</h4>
+        <div class="bodySections">
+            <h3>Clearance</h3>
+            
+            <div class="bodyInputContainer">                
+                <div class="bodyInputBox W33" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Frequency</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="CLRFrequency" type="text" name="CLRFrequency" placeholder="121.75" onfocus="this.placeholder = ''" onblur="this.placeholder = '121.75'">
+                    </div>
                 </div>
-            </div>
-            <div class="jvcBox" id="jvcJaz">
-                <div class="jvcInside">
-                    <h4>Chike</h4>
+                <div class="bodyInputBox W33" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>SID</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="CLRSID" type="text" name="CLRSID" placeholder="DANCE" onfocus="this.placeholder = ''" onblur="this.placeholder = 'DANCE'">
+                    </div>
                 </div>
+                <div class="bodyInputBox W33" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Runway</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="CLRRW" type="text" name="CLRRW" placeholder="7L" onfocus="this.placeholder = ''" onblur="this.placeholder = '7L'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W33" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>SID-Transition</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="CLRST" type="text" name="CLRST" placeholder="N/A" onfocus="this.placeholder = ''" onblur="this.placeholder = 'N/A'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W33" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Vectors</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="clrvectors" type="text" name="clrvectors" placeholder="N/A" onfocus="this.placeholder = ''" onblur="this.placeholder = 'N/A'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W33" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Transition Level</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="ClrTransLevel" type="text" name="ClrTransLevel" placeholder="13,000" onfocus="this.placeholder = ''" onblur="this.placeholder = '13,000'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W33" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Inital Altitude</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="ClrInitAlt" type="text" name="ClrInitAlt" placeholder="4,000" onfocus="this.placeholder = ''" onblur="this.placeholder = '4,000'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W33" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>QNH</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="clrQNH" type="text" name="clrQNH" placeholder="10.01" onfocus="this.placeholder = ''" onblur="this.placeholder = '10.01'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W33" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Squawk</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="clrSquawk" type="text" name="clrSquawk" placeholder="1444" onfocus="this.placeholder = ''" onblur="this.placeholder = '1444'">
+                    </div>
+                </div>    
             </div>
         </div>
     
+        <div class="bodySections">
+            <h3>Taxi Out</h3>
+            
+            <div class="bodyInputContainer">                
+                <div class="bodyInputBox W100" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Taxi Route</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="taxiRouteOut" type="text" name="taxiRouteOut" placeholder="A, B, RW7C" onfocus="this.placeholder = ''" onblur="this.placeholder = 'A, B, RW7C'">
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+        
+        <div class="bodySections">
+            <h3>Descent & Approach</h3>
+            
+            <div class="bodyInputContainer">                
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Star</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="desSTAR" type="text" name="desSTAR" placeholder="JAS1" onfocus="this.placeholder = ''" onblur="this.placeholder = 'JAS1'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Runway</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="desRW" type="text" name="desRW" placeholder="12R" onfocus="this.placeholder = ''" onblur="this.placeholder = '12R'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Approach</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="desAPP" type="text" name="desAPP" placeholder="ILS 12R" onfocus="this.placeholder = ''" onblur="this.placeholder = 'ILS 12R'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Approach Transition</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="desAPPTrans" type="text" name="desAPPTrans" placeholder="N/A" onfocus="this.placeholder = ''" onblur="this.placeholder = 'N/A'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Vectors</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="desVectors" type="text" name="desVectors" placeholder="N/A" onfocus="this.placeholder = ''" onblur="this.placeholder = 'N/A'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>QNH</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="desQNH" type="text" name="desQNH" placeholder="10.00" onfocus="this.placeholder = ''" onblur="this.placeholder = '10.00'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Transition Level</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="desTL" type="text" name="desTL" placeholder="13,000" onfocus="this.placeholder = ''" onblur="this.placeholder = '13,000'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Minimums</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="desmin" type="text" name="desmin" placeholder="430" onfocus="this.placeholder = ''" onblur="this.placeholder = '430'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Wind</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="desWInd" type="text" name="desWInd" placeholder="109/5" onfocus="this.placeholder = ''" onblur="this.placeholder = '109/5'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Weather</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="desWeather" type="text" name="desWeather" placeholder="Overcast" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Overcast'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Time at TOD</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="desTOD" type="text" name="desTOD" placeholder="6:45" onfocus="this.placeholder = ''" onblur="this.placeholder = '6:45'">
+                    </div>
+                </div>
+                <div class="bodyInputBox W25" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Time at T/D</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="desTD" type="text" name="desTD" placeholder="7:25" onfocus="this.placeholder = ''" onblur="this.placeholder = '7:25'">
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    
+        <div class="bodySections">
+            <h3>Taxi In</h3>
+            
+            <div class="bodyInputContainer">                
+                <div class="bodyInputBox W100" id="">
+                    <div class="bodyInputBoxTitle">
+                        <h4>Taxi Route</h4>
+                    </div>
+                    <div class="bodyInputBoxInput lowCase ">
+                        <input class="bodyInput" id="taxiRouteIn" type="text" name="taxiRouteIn" placeholder="A, B, T1 Gate 2" onfocus="this.placeholder = ''" onblur="this.placeholder = 'A, B, T1 Gate 2'">
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
     </section>
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    
+    
+    <!-- Prevent Refresh -->
+    <script type="text/javascript">
+        window.onbeforeunload = function() {
+            return "Dude, are you sure you want to leave? Think of the kittens!";
+        }
+    </script>
+    
+    <script>
+        $('#flightPlan').elastic();
+    </script>
+    
+    
+    
 </body>
 </html>
