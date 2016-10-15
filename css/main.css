@@ -216,8 +216,13 @@ h4{
     width: calc(100% / 3);
 }
 
+.upperCaseText{
+    text-transform: uppercase;
+}
 
-
+.capitalizedText{
+    text-transform: capitalize;
+}
 
 
 
